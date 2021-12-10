@@ -1,0 +1,14 @@
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+figure{
+    margin: 0rem;
+}
+
+figcaption{
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-article-citation);
+    color:grey;
+}

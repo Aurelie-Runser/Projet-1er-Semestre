@@ -1,0 +1,34 @@
+:root{
+    /* Color styles */
+--color-titre-violet: rgba(186, 100, 252, 1);
+--color-elements-graphique: rgba(255, 255, 243, 0.75);
+--color-bouton: rgba(95, 27, 147, 1);
+--color-fond-rouge: rgba(56, 0, 0, 1);
+--color-fond-blanc: rgba(255, 255, 243, 1);
+--color-fond-noir: rgba(0, 0, 0, 1);
+--color-texte-noir: rgba(12, 12, 12, 1);
+--color-texte-blanc: rgba(255, 255, 243, 1);
+--color-lexique-claire: rgba(209, 138, 252, 1);
+--color-lexique-fonce: rgba(124, 19, 204, 1);
+
+/* Text-size styles */
+/* base size: texte (16px) */
+--size-titre-page: 2.25rem;
+--size-bouton: 1.12rem;
+--size-texte: 1rem;
+--size-element-graphique: 2.25rem;
+--size-titre-femmes-fortes: 1.88rem;
+--size-tweet-titre: 1.12rem;
+--size-tweet-texte: 0.88rem;
+--size-article-chapeau: 1.12rem;
+--size-article-intertitre: 1.5rem;
+--size-article-sous-titre: 1.12rem;
+--size-article-citation: 1.12rem;
+
+/* Font family style */
+--font-manuscrit : "Lobster";
+--font-machine : "Roboto Slab";
+--font-texte : "Nunito";
+--font-texte-italic : "Nunito", italic;
+
+}

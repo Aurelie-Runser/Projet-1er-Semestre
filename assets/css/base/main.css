@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body, a{
+    color: var(--color-texte-blanc);
+    background-color: var(--color-fond-rouge);
+}
+
+p, a{
+    font-family: var(--font-texte);
+    font-size: var(--size-texte);
+    line-height: 1.6;
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-titre-page);
+    line-height: auto;
+    text-align: center;
+}
+
+h2{
+    font-family: var(--font-machine);
+    font-size: var(--size-article-intertitre);
+    line-height: auto;    
+}
+
+.deco{
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-element-graphique);
+    color: var(--color-elements-graphique);
+}
+
+.listUnstyles{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: var(--color-texte-blanc);
+  }

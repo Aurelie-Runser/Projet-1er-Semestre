@@ -1,0 +1,18 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+
+/* Base */
+@import url("base/main.css");
+@import url("base/media.css");
+
+/* Compenents */
+@import url("components/menu.css");
+@import url("components/tweet.css");
+/* Layout */
+
+/* Utils */
+@import url("utils/variables.css");
+
+/* Vendors */
