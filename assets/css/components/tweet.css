@@ -1,3 +1,4 @@
+/*marges internes/ externe, bordur et couleur de fond*/
 .tweet{
     margin: 1rem;
     padding: 0.3rem;
@@ -5,7 +6,9 @@
     background-color: var(--color-fond-blanc);
 }
 
-.tweet__header{
+/*position de l'image, taille, */
+.tweet__header,
+.tweet__galerie__header{
     position: relative;
     width: 100%;
     height: 7rem;
@@ -13,15 +16,17 @@
     border-top-right-radius: 1rem;
     align-items: center;
     overflow: hidden;
-    display: flex;   
-    align-items: center;
+    display: flex;
 }
 
+/* l'image devient un bloque */
 .tweet__img{
     display: block;
 }
 
-.tweet__title{
+/* le titre se place par rapport à l'header, position, police, taille, fond...*/
+.tweet__title,
+.tweet__galerie__title{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -34,12 +39,14 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+/* marge, police et taille du texte */
 .tweet__texte{
     margin: 0.5rem;
     font-size: var(--size-tweet-texte);
     color: var(--color-texte-noir);
 }
 
+/* texte du bouton + placement dans le tweet + placement alignement du texte et de la fleche */
 .tweet__bouton{
     color: var(--color-texte-noir);
     font-family: var(--font-manuscrit);
@@ -51,14 +58,66 @@
     align-items: center;
 }
 
-.tweet__bouton__img{
+/* tourné la fleche pour qu'elle pointe vers la droite */
+.tweet__bouton__img,
+.tweet__galerie__bouton,
+.tweet__autre__bouton{
     transform: rotate(90deg);
     margin: 0.5rem;
 }
 
+
+/* TWEET DE LA GALERIE */
+
+
 .tweet__galerie{
-    margin: 1rem;
-    padding: 0.3rem;
+    position: relative;
+    width: 100%;
+    height: 7rem;
     border-radius: 1rem;
-    background-color: var(--color-fond-blanc);
+}
+
+/* arrondie de l'image */
+.tweet__galerie__header{
+    border-radius: 1rem;
+}
+
+/* arrondie du fond du texte */
+.tweet__galerie__title{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* placement du bouton par rapport à l'image */
+.tweet__galerie__bouton{  
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+
+/* TWEET FRISE + AUTRES PROJETS */
+
+
+.tweet__autre__header{
+    position: relative;
+    width: 100%;
+    align-items: top;
+    display: block;
+}
+
+/* marges, couleur, police et taille du titre */
+.tweet__autre__title{
+    margin-top: -0.1rem;
+    padding: 0.5rem;
+    color: var(--color-texte-noir);
+    font-family: var(--font-machine);
+    font-size: var(--size-tweet-titre);
+}
+
+.tweet__autre__bouton{
+    position: absolute;
+    right: 1%;
+    top: 5%
+    
 }
