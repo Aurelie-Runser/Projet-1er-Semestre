@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 
+/* la couleur par défaut du texte et du fond */
 body, a{
     color: var(--color-texte-blanc);
     background-color: var(--color-fond-rouge);
 }
 
+/* police de base */
 p, a{
     font-family: var(--font-texte);
     font-size: var(--size-texte);
@@ -16,7 +18,7 @@ p, a{
     text-decoration: none;
 }
 
-
+/* titre */
 h1{
     font-family: var(--font-manuscrit);
     font-size: var(--size-titre-page);
@@ -24,21 +26,33 @@ h1{
     text-align: center;
 }
 
+/* sous-titre */
 h2{
     font-family: var(--font-machine);
     font-size: var(--size-article-intertitre);
     line-height: auto;    
 }
 
+/* textes décoratif */
 .deco{
     font-family: var(--font-manuscrit);
     font-size: var(--size-element-graphique);
     color: var(--color-elements-graphique);
 }
 
+/* supression des décorations des listes */
 .listUnstyles{
     list-style: none;
     margin: 0;
     padding: 0;
     color: var(--color-texte-blanc);
-  }
+}
+
+/* tourné la fleche pour qu'elle pointe vers la droite */
+.tweet__bouton__img,
+.tweet__galerie__bouton,
+.tweet__autre__bouton{
+    transform: rotate(90deg);
+    margin: 10px;
+    margin-right: 1px;
+}
