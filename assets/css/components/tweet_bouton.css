@@ -89,7 +89,7 @@
 /* placement du bouton par rapport à l'image */
 .tweet__galerie__bouton{  
     position: absolute;
-    right: 0%;
+    right: 1%;
     top: 0%;
 }
 
@@ -125,13 +125,15 @@
 
 /* Boutons */
 
-.boutons__aligne{
+/* alignement en centrage des boutons */
+.boutons__aligne--horizontal{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
     gap: 2rem;
 }
 
+/* les boutons */
 .bouton__contenu{
     background-color: var(--color-fond-noir);
     height: 50px;

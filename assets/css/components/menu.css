@@ -1,0 +1,43 @@
+/* Mise en forme du menu + initialisation fermé */
+.menu{
+    overflow: hidden;
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    z-index: 1;
+    background-color: var(--color-fond-noir);
+    transition: all .5s ease-in-out;
+}
+
+/* Menu ouvert */
+.menu--open {
+    visibility: visible;
+    top: 0;
+}
+
+.menu__list{
+    width: 100%;
+    text-align: right;
+}
+
+.menu__item{
+    font-family: var(--font-manuscrit); 
+    padding-right: 10%;  
+    margin-top: 15px;
+}
+
+.menu__img{
+    width: 100%;
+}
+
+.menu-btn {
+    position: relative;
+    transition: all .5s;
+}
+
+.menu-btn--open{
+    transform: rotate(-90deg);
+}

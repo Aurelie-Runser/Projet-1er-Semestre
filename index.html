@@ -29,9 +29,12 @@
             </button>
 
         </nav>
+
+        <img src="assets/img/header/header_Fr.webp" alt="Banniere">
         
         <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
             <ul class="menu__list listUnstyles">
+                <img class="menu__img" src="assets/img/header/header_Fr.webp" alt="Banniere">
                 <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
                 <li class="deco">Articles</li>
                 <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
@@ -49,8 +52,6 @@
             </ul>
         </nav>
 
-        <img src="assets/img/header/header_Fr.webp" alt="Banniere">
-
     </header>
 
     <main>
@@ -60,9 +61,22 @@
                 se laisser stopper par leur sexe. De la médecine du 19ème siècle à la politique du 20ème siècle, en
                 passant par la Seconde Guerre Mondiale, des femmes historiques du monde entier sont mise à l’honneur sur
                 Femmes Fortes.fr. Découvrez celles qui se sont imposées dans des milieux masculins comme l’armé. Comment
-                elles ont façonné le monde d’aujourd’hui grâce à leur courage et leur détermination !</p>
-            <img src="#" alt="Video">
+                elles ont façonné le monde d’aujourd’hui grâce à leur courage et leur détermination !
+            </p>
+            
+            <center>
+                <video class="video"
+                       src="exemple.mp4" 
+                       width=340  
+                       height=191
+                       controls
+                       poster="vignette.jpg">
+                </video>
+            </center>
+
         </div>
+
+        <span class="espace"></span>
 
         <section>
             <h2 class="deco">Articles</h2>
@@ -116,6 +130,8 @@
             </article>
         </section>
 
+        <span class="espace"></span>
+
         <section id="Galerie">
             <h3 class="deco">Galerie</h3>
             <p>Des portraits court et précis de femmes historique de différents domaines</p>
@@ -154,6 +170,8 @@
                 </a>
             </div>
         </section>
+
+        <span class="espace"></span>
 
         <div class="tweet">
             <a href="frise_FR.html">
@@ -210,39 +228,44 @@
     </main>
 
     <footer>
-        <div>
-            <p>Aurélie Runser - C1</p>
-            <address>
-                <a href="mailto:femmesfortes@gmail.com">Contact : femmesfortes@gmail.com</a>
+        <header class="footer__header">
+            <p class="footer__header__texte">Aurélie Runser - C1</p>
+            <address class="footer__header__texte">
+                <span class="footer__header__texte">Contact : 
+                    <a href="mailto:femmesfortes@gmail.com">femmesfortes@gmail.com</a>
+                </span>
             </address>
-        </div>
-
-        <nav>
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="./">Accueil</a></li>
-                <li><a href="a_propos_FR.html">&Agrave Propos</a></li>
-                <li><a href="contact_FR.html">Contact</a></li>
-                <li><a href="autres_projets_FR.html">Autres Projets</a></li>
-            </ul>
-        </nav>
+        </header>
 
         <div>
             <h3>Suivre Femmes Fortes</h3>
-            <ul>
+            <ul class="listUnstyles footer__liste-reseaux">
                 <li><a href="https://facebook.com"><img src="assets/icones/Facebook.svg" alt="Facebook"></a></li>
                 <li><a href="https://twitter.com"><img src="assets/icones/Twitter.svg" alt="Twitter"></a></li>
                 <li><a href="https://instagramcom"><img src="assets/icones/Instagram.svg" alt="Instagram"></a></li>
             </ul>
         </div>
+        <hr class="ligne_pointie">
 
-        <div>
-            <a href="http://mmimontbeliard.com/" target="_blank"><img src="assets/icones/LogoMMI.svg"
+        <nav>
+            <h3>Menu</h3>
+            <ul class="listUnstyles footer__liste-menu">
+                <li class="footer__liste-item"><a href="./">Accueil</a></li>
+                <li class="footer__liste-item"><a href="a_propos_FR.html">&Agrave Propos</a></li>
+                <li class="footer__liste-item"><a href="contact_FR.html">Contact</a></li>
+                <li class="footer__liste-item"><a href="autres_projets_FR.html">Autres Projets</a></li>
+            </ul>
+        </nav>
+        <hr class="ligne_pointie">
+
+        <footer class="footer__footer">
+            <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img src="assets/icones/LogoMMI.svg"
                     alt="Logo MMI Montbéliard"></a>
-            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard<br>Tout droit
-                réservé</p>
-        </div>
+            <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
+            <br>Tout droit réservé.
+            </p>
+        </footer>
+
     </footer>
 </body>
-
 </html>

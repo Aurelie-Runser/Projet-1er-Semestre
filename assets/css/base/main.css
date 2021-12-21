@@ -5,17 +5,19 @@
 }
 
 /* la couleur par défaut du texte et du fond */
-body, a{
+body{
+    margin: 0 auto;
     color: var(--color-texte-blanc);
     background-color: var(--color-fond-rouge);
-}
-
-/* police de base */
-p, a{
     font-family: var(--font-texte);
     font-size: var(--size-texte);
     line-height: 1.6;
     text-decoration: none;
+}
+
+p{
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* titre */
@@ -33,11 +35,17 @@ h2{
     line-height: auto;    
 }
 
+a{
+    color: var(--color-texte-blanc);
+    text-decoration: none;
+}
+
 /* textes décoratif */
 .deco{
     font-family: var(--font-manuscrit);
     font-size: var(--size-element-graphique);
     color: var(--color-elements-graphique);
+    margin: 0 10% -5px 5%;
 }
 
 /* supression des décorations des listes */
@@ -48,6 +56,15 @@ h2{
     color: var(--color-texte-blanc);
 }
 
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
 /* tourné la fleche pour qu'elle pointe vers la droite */
 .tweet__bouton__img,
 .tweet__galerie__bouton,
@@ -55,4 +72,26 @@ h2{
     transform: rotate(90deg);
     margin: 10px;
     margin-right: 1px;
+}
+
+.ligne_pointie{
+    border: none;
+    border-bottom: dashed var(--color-elements-graphique);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.espace{
+    margin: 5rem;
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+.video{
+    border: solid var(--color-fond-blanc);
+    border-radius: 1rem;
+    margin-top: 1rem;
 }
