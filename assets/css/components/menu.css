@@ -15,7 +15,7 @@
 /* Menu ouvert */
 .menu--open {
     visibility: visible;
-    top: 0;
+    top: 10%;
 }
 
 .menu__list{
@@ -24,7 +24,8 @@
 }
 
 .menu__item{
-    font-family: var(--font-manuscrit); 
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-menu); 
     padding-right: 10%;  
     margin-top: 15px;
 }

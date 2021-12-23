@@ -2,6 +2,8 @@
 *::before,
 *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 /* la couleur par défaut du texte et du fond */
@@ -16,8 +18,7 @@ body{
 }
 
 p{
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
 }
 
 /* titre */
@@ -45,7 +46,15 @@ a{
     font-family: var(--font-manuscrit);
     font-size: var(--size-element-graphique);
     color: var(--color-elements-graphique);
-    margin: 0 10% -5px 5%;
+    margin: 0 6% 0 5%;
+}
+
+/* ligne décoratif */
+.ligne_pointie{
+    border: none;
+    border-bottom: dashed var(--color-elements-graphique);
+    margin-top: 5%;
+    margin-bottom: 20px;
 }
 
 /* supression des décorations des listes */
@@ -56,13 +65,14 @@ a{
     color: var(--color-texte-blanc);
 }
 
+/*  */
 button {
     -webkit-appearance: none;
     appearance: none;
     border: none;
     background: none;
     padding: 0;
-    cursor: pointer;
+
   }
 
 /* tourné la fleche pour qu'elle pointe vers la droite */
@@ -74,15 +84,8 @@ button {
     margin-right: 1px;
 }
 
-.ligne_pointie{
-    border: none;
-    border-bottom: dashed var(--color-elements-graphique);
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
 .espace{
-    margin: 5rem;
+    margin: 8%;
 }
 
 .noscroll,
@@ -94,4 +97,10 @@ button {
     border: solid var(--color-fond-blanc);
     border-radius: 1rem;
     margin-top: 1rem;
+}
+
+.cache{
+    display: block;
+    height: 82px;
+    background-color: var(--color-fond-noir);
 }
