@@ -54,6 +54,22 @@ a{
     text-decoration: none;
 }
 
+/* mise en forme des liens internes et externes */
+.lien,
+.claire,
+.fonce{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.claire{
+    color: var(--color-lexique-claire);
+}
+
+.externe{
+    color: var(--color-lexique-fonce);
+}
+
 /* mise en page des citations */
 blockquote{
     display: block;
