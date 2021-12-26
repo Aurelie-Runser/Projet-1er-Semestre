@@ -24,7 +24,7 @@ body{
 
 /* paragraphes  */
 p{
-    margin: 30px;
+    margin: 20px;
 }
 
 /* titre */
@@ -38,14 +38,14 @@ h1{
 h2{
     font-family: var(--font-machine);
     font-size: var(--size-article-intertitre);
-    margin: 30px
+    margin: 20px
 }
 
 /* sous-titre */
 h3{
     font-family: var(--font-machine);
     font-size: var(--size-article-sous-titre);
-    margin: 20px 40px 20px 30px;
+    margin: 20px 40px 20px 20px;
 }
 
 /* supression des décorations et des couleurs des liens */
@@ -73,7 +73,7 @@ a{
 /* mise en page des citations */
 blockquote{
     display: block;
-    margin: 30px;
+    margin: 20px;
     padding: 5px 10px 5px 20px;
     border-left: 5px dashed var(--color-elements-graphique);
 

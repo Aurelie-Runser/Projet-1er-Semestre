@@ -26,8 +26,8 @@
 .menu__item{
     font-family: var(--font-manuscrit);
     font-size: var(--size-menu); 
-    padding-right: 10%;  
-    margin-top: 15px;
+    padding-right: 10%;
+    margin-top: 10px;
 }
 
 .menu__img{
