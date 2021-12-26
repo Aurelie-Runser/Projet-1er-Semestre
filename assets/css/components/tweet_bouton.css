@@ -125,7 +125,33 @@
 
 /* Boutons */
 
-/* alignement en centrage des boutons */
+/* suppression des décorations mis automatiquement sur les bouttons */
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+
+}
+
+/* tourné la fleche pour qu'elle pointe vers la droite */
+.tweet__bouton__img,
+.tweet__galerie__bouton,
+.tweet__autre__bouton{
+    transform: rotate(90deg);
+    margin: 10px;
+    margin-right: 1px;
+}
+/* Mise en forme de l'image et du texte du bouton */
+
+.bouton__contenu{
+    background-color: var(--color-fond-noir);
+    height: 50px;
+    width: max-content;
+}
+
+/* alignement et centrage des boutons */
 .boutons__aligne--horizontal{
     display: flex;
     justify-content: space-between;
@@ -134,9 +160,20 @@
     padding-right: 2%;
 }
 
-/* les boutons */
-.bouton__contenu{
-    background-color: var(--color-fond-noir);
-    height: 50px;
-    width: max-content;
+/* alignement à droite des boutons */
+
+.boutons__aligne--droite{
+    display: grid;
+    width: 100%;
+    padding-right: 20px;
+}
+.boutons_pages{
+    justify-self: right;
+    margin: 0 0 20px 0;
+}
+
+/* bouton sur les pages article qui permet de retournern en haut de la page */
+.bouton_haut_de_page-article{
+    float: right;
+    margin: 20px 40px;
 }

@@ -4,11 +4,11 @@ img{
 }
 
 figure{
-    margin: 0rem;
+    margin: 7% ;
 }
 
 figcaption{
-    font-family: var(--font-manuscrit);
-    font-size: var(--size-article-citation);
-    color:grey;
+    font-family: var(--font-texte);
+    font-size: 0.88rem;
+    text-align: right;
 }

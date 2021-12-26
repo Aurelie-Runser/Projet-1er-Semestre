@@ -1,7 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,400;1,600&display=swap');
 
 /* Base */
 @import url("base/main.css");
@@ -12,6 +12,7 @@
 @import url("components/tweet_bouton.css");
 
 /* Layout */
+@import url("layout/article.css");
 @import url("layout/header.css");
 @import url("layout/footer.css");
 

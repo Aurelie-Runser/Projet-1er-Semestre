@@ -1,124 +1,195 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Article : Les Femmes fond de la Résistance</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-            <a href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
-            <a href="menu_FR.html"><img src="assets/icones/MenuFerme.svg" alt="Menu"></a>
-        </nav>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
-        <h1>Femmes Fortes</h1>
-        <h1>Les Femmes font de la Résistance</h1>
-        <img src="assets/img/header/header_article_revolution.webp" alt="Banniere">
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Article : Les Femmes fond de la Résistance</title>
+    </head>
 
-    <main>
-        <div>
-            <p>En 1940, après l’appel du général de Gaulle, commença la Résistance en France. Tout ceux ayant un esprit patriotique, ou contre la dictature allemande, si engageaient. Même les femmes. Cependant, en plus de combattre l’ennemie, ces dernières devaient aussi lutter contre les stéréotypes qui leurs dictaient leur place, contre les lois restreignant leurs libertés, et les hommes qui ne croyaient pas en leurs capacités. Durant la seconde guerre mondiale, les femmes de la Résistance française ont dû prouver leur force.</p>
-        </div>
-
-        <div class="div">
-            <h2>La place de la femme c’est à la maison !</h2>
-            <p>Le 11 juillet 1940, le régime de Vichy fut instauré par le maréchal Pétain. Ce dernier n’était pas en faveur des femmes. C’était simple, les hommes partaient à la guerre et les femmes restaient s’occuper des enfants. De nombreuses lois allaient dans ce sens : interdiction d’embaucher des femmes mariées, l’avortement devient un crime contre l’état, l’abandon du foyer devient une faute pénale, le divorce est plus dur à obtenir… Sans oublier que les femmes n’avaient pas de statut politique ou social. Elles n’avaient aucun droit !</p>
-            <p>De plus, le gouvernement de Pétain accusait les femmes du déclin de la France. Il y avait un faible taux de naissance des garçons, donc un faible nombre de futur soldat. Le rôle des femmes durant la guerre était d’être des mères et épouses aimantes, prenant soins du foyer en attendant que leur mari revienne.</p>
-            <p>Malheureusement pour le régime de Vichy, les femmes peuvent être patriotes, insoumises et révoltées autant que les hommes !</p>
-            <p>Marguerite Gonnet, une cheffe de division de la Résistance fut arrêtée pour distribution de journaux clandestin. Lorsqu’un colonel nazi lui demanda comment une mère de 9 enfants ai pu prendre les armes, elle répondit :</p>
-            <blockquote>Tout simplement, colonel, parce que les hommes les avaient laissées tomber.</blockquote>
-        </div>
-
-        <div>
-            <h2>La Résistance quand on est une femme</h2>
-            <p>Il était très difficile pour une femme d’entrer dans la Résistance. Elles devaient prouver leur valeur encore plus que les hommes qui ne croyaient pas qu’une femme pouvait survivre et être utile à la guerre. Des postes étaient néanmoins plus féminins que masculin ! On dit que c’était la Résistance sans armes.</p>
-            
-            <h3>La Résistance sans armes</h3>
-            <p>La majorité des résistantes étaient des agents de liaison et devaient transmettre des messages, des armes ou de l’argent. Pour cela, beaucoup utilisaient le vélo. Elles pouvaient donc se déplacer sur des routes moins fréquentées, donc moins contrôler. Colette Périès-Martinez, une agent de liaison avait déclaré :</p>
-            <blockquote>À la Libération, on était prête pour le Tour de France !</blockquote>
-            <p>En effet, les informations devaient être impérativement transmises, donc les femmes devaient faire la route peu importe le temps et la distance. De plus, elles étaient moins suspectées par les soldats que les hommes. Elles étaient donc de véritable atout pour la Résistance. Jugées innocentes, inoffensives, elles se déplaçaient beaucoup plus facilement.</p>
-            <figure>
-                <img src="assets/img/resistance/velo.webp" alt="Photo du défilé des agents de liaison lors de la Libération">
-                <figcaption>Photo du défilé des agents de liaison lors de la Libération</figcaption>
-            </figure>
-            <p>Certaines accueillaient chez elles des prisonniers en fuitent, des alliées, des résistants et des juifs. Leur maison étaient des points de relai indispensable au fonctionnement de la Résistance.</p>
-            <p>D’autres s’occupaient de journaux clandestins, comme Berty Albrecht, secrétaire, rédactrice et fondatrice de 4 journaux de résistance !</p>
-            <p>Cependant même si elles n’étaient pas au front, si elles se faisaient prendre par la gestapo ou la police, elles recevaient les mêmes punitions que les hommes : déportation, torture, exécution. Ce fut le cas Berty Albrecht, déportée et torturée en 1943 dans la prison de Fresnes à Paris.</p>
-
-            <h3>La Résistance armée</h3>
-            <p>Très peu de femmes réussirent à faire une Résistance dite armée, car pour cela, il fallait la confiance des hommes. Celles-ci étaient généralement chargé de repérer les lieux, de transporter les armes, participaient au sabotage de voix ferrer et sauvetage de prisonnier. D’autre encore étaient spécialistes d’explosif.</p>
-            <p>Lucie Aubrac, en plus d’être une professeure dans un lycée encourageant ses élèves à lutter contre les injustices, rédigeait des articles et participait à de nombreuses évasions, la plus connu étant celle où elle sauva son mari.</p>
-            <p>Paulette Jacquier, elle, s’occupait des sabotages de voix ferrés. Elle intégra plus tard
-                <a href="lexique_FR.html#m">les maquis</a>, puis 
-                <a href="lexique_FR.html#f">les Forces Françaises Libres</a>. 
-                Elle fut la 1ère et seule femme de la 1ère division où elle était 
-                <a href="lexique_FR.html#f">fusilieur-voltigeur</a> en 1ère ligne.</p>
-            <p>La Résistance était un milieu moins sexiste que d'autres, car le principal critère était la volonté à combattre l'ennemie.</p>
-            <figure>
-                <img src="assets/img/resistance/resistantes.webp" alt="Photo de résistantes engagées dans les FFI">
-                <figcaption>Photo de résistantes engagées dans les FFI</figcaption>
-            </figure>
-        </div>
-
-        <div>
-            <h2>L’après-guerre pour les femmes, une avancée et un retour aux habitudes</h2>
-            <p>Après la guerre, il y a eu une grande avancé pour les femmes. Ces dernières ont joué un rôle important dans la Résistance, il est donc normal qu’elles soient récompensées. Elles obtinrent le droit de vote et d’éligibilité, et sont plus présentes dans les comité et conseil municipaux. Elles pouvaient également s'engager dans l'armé avec le Personnel féminin de l’Armée de terre.</p>
-            <p>Cependant, dans la vie de tous les jours, tout est redevenue comme avant. Les hommes au travail et les femmes à la maison. Là plus par des résistantes retournaient simplement chez elles et reprenaient leur vie de femme, de mère et d’épouse. Cela est dû, en partie, à la volonté de vouloir oublier la guerre et tout ce qui s’y rattache.</p>
-            <p>Très peu de femme se revendiquait ayant été dans le Résistance, car elles ne voulaient pas témoigner, de peur de ne pas être cru, et de se remémorer les horreurs qu’elles avaient vue. La majorité de leurs actions n’étaient pas sur le front mais des actions intermédiaires, en retrait, tel que la logistique, le ravitaillement, les liaisons ou le repérage. Ces taches, moins impressionnantes, étaient souvent oublier.</p>
-            <figure>
-                <img src="assets/img/resistance/femmes_armees.webp" alt="Photo de femmes armées">
-                <figcaption>Photo de femmes armées</figcaption>
-            </figure>
-        </div>
-
-        <div>
-            <p>Les femmes ont réussi à s’imposer dans la Résistance, un monde d’homme, et ont défendu leur pays de différentes façons, prouvant leur utilité autre part que dans une cuisine. Le général de Gaulle, conscient que sans elles, la guerre aurait été différente, leur accorda des droits égaux aux hommes. Cependant, les mentalités n’évoluèrent pas aussi vite. Beaucoup de femme sont retournées à leur vie d’avant et les hommes ont oublié ce qu’elles ont fait. Malgré cela, on ne peut pas négliger que l’activité des femmes dans la Résistance à jouer un rôle dans l’évolution de leur condition.</p>
-            <p>Elles inspirent de plus en plus de personne à mesure que leurs histoires sont racontées.</p>
-        </div>
-
-        <section>
-            <a href="#top"><img src="assets/icones/FlecheHaut.svg" alt="Bouton retour en haut de page"></a>
-            <h2>Autres Articles</h2>
-            <a href="article_interview_FR.html">Interview d'une future militaire</a>
-            <a href="article_livre_FR.html">60 Femmes qui ont changé le monde</a>
-        </section>
-    </main>
-
-    <footer>
+    <body>
         <header>
-            <p>Aurélie Runser - C1</p>
-            <address>
-                <a href="mailto:femmesfortes@gmail.com">Contact : femmesfortes@gmail.com</a>
-            </address>
+            <nav class="header__banniere">
+
+                <div class="header__start">
+                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                </div>
+
+                <!--<a href="menu_FR.html"></a>-->
+
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    @pointerdown="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+
+                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                </button>
+
+            </nav>
+
+            <div class="cache"></div>
+            <div class="header__revolution">
+                <h1 class="femmes_fortes">Femmes Fortes</h1>
+                <h1 class="titre">Les Femmes font de la Résistance</h1>
+            </div>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list listUnstyles">
+                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="deco">Articles</li>
+                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="deco">Galerie</li>
+                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="espace"></li>
+                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                </ul>
+            </nav>
+
         </header>
 
-        <nav>
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="./">Accueil</a></li>
-                <li><a href="#">&Agrave Propos</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Autres Projets</a></li>
-            </ul>
-        </nav>
+        <main>
+            <div>
+                <p class="chapo">En 1940, après l’appel du général de Gaulle, commença la Résistance en France. Tout ceux ayant un esprit patriotique, ou contre la dictature allemande, si engageaient. Même les femmes. Cependant, en plus de combattre l’ennemie, ces dernières devaient aussi lutter contre les stéréotypes qui leurs dictaient leur place, contre les lois restreignant leurs libertés, et les hommes qui ne croyaient pas en leurs capacités. Durant la seconde guerre mondiale, les femmes de la Résistance française ont dû prouver leur force.</p>
+            </div>
 
-        <h3>Suivre Femmes Fortes</h3>
-        <ul>
-            <li><a href="https://facebook.com"><img src="assets/icones/Facebook.svg" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com"><img src="assets/icones/Twitter.svg" alt="Twitter"></a></li>
-            <li><a href="https://instagramcom"><img src="assets/icones/Instagram.svg" alt="Instagram"></a></li>
-        </ul>
+            <div class="div">
+                <h2>La place de la femme c’est à la maison !</h2>
+                <p>Le 11 juillet 1940, le régime de Vichy fut instauré par le maréchal Pétain. Ce dernier n’était pas en faveur des femmes. C’était simple, les hommes partaient à la guerre et les femmes restaient s’occuper des enfants. De nombreuses lois allaient dans ce sens : interdiction d’embaucher des femmes mariées, l’avortement devient un crime contre l’état, l’abandon du foyer devient une faute pénale, le divorce est plus dur à obtenir… Sans oublier que les femmes n’avaient pas de statut politique ou social. Elles n’avaient aucun droit !</p>
+                <p>De plus, le gouvernement de Pétain accusait les femmes du déclin de la France. Il y avait un faible taux de naissance des garçons, donc un faible nombre de futur soldat. Le rôle des femmes durant la guerre était d’être des mères et épouses aimantes, prenant soins du foyer en attendant que leur mari revienne.</p>
+                <p>Malheureusement pour le régime de Vichy, les femmes peuvent être patriotes, insoumises et révoltées autant que les hommes !</p>
+                <p>Marguerite Gonnet, une cheffe de division de la Résistance fut arrêtée pour distribution de journaux clandestin. Lorsqu’un colonel nazi lui demanda comment une mère de 9 enfants ai pu prendre les armes, elle répondit :</p>
+                <blockquote>Tout simplement, colonel, parce que les hommes les avaient laissées tomber.</blockquote>
+            </div>
 
-        <div>
-            <a href="#"><img src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard<br>Tout droit réservé</p>
-        </div>
-        
-    </footer>
-</body>
+            <div>
+                <h2>La Résistance quand on est une femme</h2>
+                <p>Il était très difficile pour une femme d’entrer dans la Résistance. Elles devaient prouver leur valeur encore plus que les hommes qui ne croyaient pas qu’une femme pouvait survivre et être utile à la guerre. Des postes étaient néanmoins plus féminins que masculin ! On dit que c’était la Résistance sans armes.</p>
+                
+                <h3>La Résistance sans armes</h3>
+                <p>La majorité des résistantes étaient des agents de liaison et devaient transmettre des messages, des armes ou de l’argent. Pour cela, beaucoup utilisaient le vélo. Elles pouvaient donc se déplacer sur des routes moins fréquentées, donc moins contrôler. Colette Périès-Martinez, une agent de liaison avait déclaré :</p>
+                <blockquote>À la Libération, on était prête pour le Tour de France !</blockquote>
+                <p>En effet, les informations devaient être impérativement transmises, donc les femmes devaient faire la route peu importe le temps et la distance. De plus, elles étaient moins suspectées par les soldats que les hommes. Elles étaient donc de véritable atout pour la Résistance. Jugées innocentes, inoffensives, elles se déplaçaient beaucoup plus facilement.</p>
+                <figure>
+                    <img src="assets/img/resistance/velo.webp" alt="Photo du défilé des agents de liaison lors de la Libération">
+                    <figcaption>Photo du défilé des agents de liaison lors de la Libération</figcaption>
+                </figure>
+                <p>Certaines accueillaient chez elles des prisonniers en fuitent, des alliées, des résistants et des juifs. Leur maison étaient des points de relai indispensable au fonctionnement de la Résistance.</p>
+                <p>D’autres s’occupaient de journaux clandestins, comme Berty Albrecht, secrétaire, rédactrice et fondatrice de 4 journaux de résistance !</p>
+                <p>Cependant même si elles n’étaient pas au front, si elles se faisaient prendre par la gestapo ou la police, elles recevaient les mêmes punitions que les hommes : déportation, torture, exécution. Ce fut le cas Berty Albrecht, déportée et torturée en 1943 dans la prison de Fresnes à Paris.</p>
+
+                <h3>La Résistance armée</h3>
+                <p>Très peu de femmes réussirent à faire une Résistance dite armée, car pour cela, il fallait la confiance des hommes. Celles-ci étaient généralement chargé de repérer les lieux, de transporter les armes, participaient au sabotage de voix ferrer et sauvetage de prisonnier. D’autre encore étaient spécialistes d’explosif.</p>
+                <p>Lucie Aubrac, en plus d’être une professeure dans un lycée encourageant ses élèves à lutter contre les injustices, rédigeait des articles et participait à de nombreuses évasions, la plus connu étant celle où elle sauva son mari.</p>
+                <p>Paulette Jacquier, elle, s’occupait des sabotages de voix ferrés. Elle intégra plus tard
+                    <a href="lexique_FR.html#m">les maquis</a>, puis 
+                    <a href="lexique_FR.html#f">les Forces Françaises Libres</a>. 
+                    Elle fut la 1ère et seule femme de la 1ère division où elle était 
+                    <a href="lexique_FR.html#f">fusilieur-voltigeur</a> en 1ère ligne.</p>
+                <p>La Résistance était un milieu moins sexiste que d'autres, car le principal critère était la volonté à combattre l'ennemie.</p>
+                <figure>
+                    <img src="assets/img/resistance/resistantes.webp" alt="Photo de résistantes engagées dans les FFI">
+                    <figcaption>Photo de résistantes engagées dans les FFI</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2>L’après-guerre pour les femmes, une avancée et un retour aux habitudes</h2>
+                <p>Après la guerre, il y a eu une grande avancé pour les femmes. Ces dernières ont joué un rôle important dans la Résistance, il est donc normal qu’elles soient récompensées. Elles obtinrent le droit de vote et d’éligibilité, et sont plus présentes dans les comité et conseil municipaux. Elles pouvaient également s'engager dans l'armé avec le Personnel féminin de l’Armée de terre.</p>
+                <p>Cependant, dans la vie de tous les jours, tout est redevenue comme avant. Les hommes au travail et les femmes à la maison. Là plus par des résistantes retournaient simplement chez elles et reprenaient leur vie de femme, de mère et d’épouse. Cela est dû, en partie, à la volonté de vouloir oublier la guerre et tout ce qui s’y rattache.</p>
+                <p>Très peu de femme se revendiquait ayant été dans le Résistance, car elles ne voulaient pas témoigner, de peur de ne pas être cru, et de se remémorer les horreurs qu’elles avaient vue. La majorité de leurs actions n’étaient pas sur le front mais des actions intermédiaires, en retrait, tel que la logistique, le ravitaillement, les liaisons ou le repérage. Ces taches, moins impressionnantes, étaient souvent oublier.</p>
+                <figure>
+                    <img src="assets/img/resistance/femmes_armees.webp" alt="Photo de femmes armées">
+                    <figcaption>Photo de femmes armées</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <p>Les femmes ont réussi à s’imposer dans la Résistance, un monde d’homme, et ont défendu leur pays de différentes façons, prouvant leur utilité autre part que dans une cuisine. Le général de Gaulle, conscient que sans elles, la guerre aurait été différente, leur accorda des droits égaux aux hommes. Cependant, les mentalités n’évoluèrent pas aussi vite. Beaucoup de femme sont retournées à leur vie d’avant et les hommes ont oublié ce qu’elles ont fait. Malgré cela, on ne peut pas négliger que l’activité des femmes dans la Résistance à jouer un rôle dans l’évolution de leur condition.</p>
+                <p>Elles inspirent de plus en plus de personne à mesure que leurs histoires sont racontées.</p>
+            </div>
+
+            <section>
+                <a href="#top"><img class="bouton_haut_de_page-article" src="assets/icones/FlecheHaut.svg" alt="Bouton retour en haut de page"></a>
+                <h2 class="deco deco_article">Autres Articles</h2>
+
+                <div class="boutons__aligne--droite">
+
+                    <div class="bouton boutons_pages">
+                        <a href="article_interview_FR.html">
+                            <span class="bouton__contenu">
+                                Interview d'une future militaire
+                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="bouton boutons_pages">
+                        <a href="article_livre_FR.html">
+                            <span class="bouton__contenu">
+                                60 Femmes qui ont changé le monde
+                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <header class="footer__header">
+                <p class="footer__header__texte">Aurélie Runser - C1</p>
+                <address class="footer__header__texte">
+                    <span class="footer__header__texte">Contact :
+                        <a href="mailto:femmesfortes@gmail.com">femmesfortes@gmail.com</a>
+                    </span>
+                </address>
+            </header>
+    
+            <div>
+                <ul class="listUnstyles footer__liste-reseaux">
+                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                                alt="Twitter"></a></li>
+                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                                alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <hr class="ligne_pointie">
+    
+            <nav>
+                <h3>Menu</h3>
+                <ul class="listUnstyles footer__liste-menu">
+                    <li class="footer__liste-item"><a href="./">Accueil</a></li>
+                    <li class="footer__liste-item"><a href="a_propos_FR.html">&Agrave Propos</a></li>
+                    <li class="footer__liste-item"><a href="contact_FR.html">Contact</a></li>
+                    <li class="footer__liste-item"><a href="autres_projets_FR.html">Autres Projets</a></li>
+                </ul>
+            </nav>
+            <hr class="ligne_pointie">
+    
+            <footer class="footer__footer">
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
+                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
+                    Montbéliard.
+                    <br>Tout droit réservé.
+                </p>
+            </footer>
+    
+        </footer>
+    </body>
 </html>

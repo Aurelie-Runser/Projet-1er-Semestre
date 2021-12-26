@@ -27,3 +27,48 @@
     align-items: center;
 }
 
+.header__titre{
+    background-color: var(--color-fond-noir);
+    padding-bottom: 10px;
+}
+
+.femmes_fortes{
+    color: var(--color-titre-violet);
+    font-size: var(--size-titre-femmes-fortes);
+}
+
+.titre{
+    font-size: var(--size-titre-page);
+}
+
+/* Image de fond de chaque header */
+
+.header__revolution{
+    background-image: url("../../img/header/header_article_revolution.webp");
+    background-size: contain;
+}
+
+.header__interview{
+    background-image: url("../../img/header/header_article_interview.webp");
+    background-size: contain;
+}
+
+.header__livre{
+    background-image: url("../../img/header/header_article_livre.webp");
+    background-size: contain;
+}
+
+.header__science{
+    background-image: url("../../img/header/header_galerie_science.webp");
+    background-size: contain;
+}
+
+.header__activistes{
+    background-image: url("../../img/header/header_galerie_activistes.webp");
+    background-size: contain;
+}
+
+.header__politique{
+    background-image: url("../../img/header/header_galerie_politique.webp");
+    background-size: contain;
+}

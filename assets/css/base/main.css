@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+/* permet un retour progressif en haut de page */
+html{
+    scroll-behavior: smooth;
+}
+
 /* la couleur par défaut du texte et du fond */
 body{
     margin: 0 auto;
@@ -17,28 +22,49 @@ body{
     text-decoration: none;
 }
 
+/* paragraphes  */
 p{
-    margin: 5%;
+    margin: 30px;
 }
 
 /* titre */
 h1{
     font-family: var(--font-manuscrit);
     font-size: var(--size-titre-page);
-    line-height: auto;
     text-align: center;
 }
 
-/* sous-titre */
+/* inter-titre */
 h2{
     font-family: var(--font-machine);
     font-size: var(--size-article-intertitre);
-    line-height: auto;    
+    margin: 30px
 }
 
+/* sous-titre */
+h3{
+    font-family: var(--font-machine);
+    font-size: var(--size-article-sous-titre);
+    margin: 20px 40px 20px 30px;
+}
+
+/* supression des décorations et des couleurs des liens */
 a{
     color: var(--color-texte-blanc);
     text-decoration: none;
+}
+
+/* mise en page des citations */
+blockquote{
+    display: block;
+    margin: 30px;
+    padding: 5px 10px 5px 20px;
+    border-left: 5px dashed var(--color-elements-graphique);
+
+    font-style: italic;
+    font-weight: 1000;
+    color: var(--color-elements-graphique);
+    font-size: var(--size-article-citation);
 }
 
 /* textes décoratif */
@@ -47,6 +73,11 @@ a{
     font-size: var(--size-element-graphique);
     color: var(--color-elements-graphique);
     margin: 0 6% 0 5%;
+}
+
+.deco_article{
+    display: inline-block;
+    margin: 70px 0 30px 20px;
 }
 
 /* ligne décoratif */
@@ -63,25 +94,6 @@ a{
     margin: 0;
     padding: 0;
     color: var(--color-texte-blanc);
-}
-
-/*  */
-button {
-    -webkit-appearance: none;
-    appearance: none;
-    border: none;
-    background: none;
-    padding: 0;
-
-  }
-
-/* tourné la fleche pour qu'elle pointe vers la droite */
-.tweet__bouton__img,
-.tweet__galerie__bouton,
-.tweet__autre__bouton{
-    transform: rotate(90deg);
-    margin: 10px;
-    margin-right: 1px;
 }
 
 .espace{
