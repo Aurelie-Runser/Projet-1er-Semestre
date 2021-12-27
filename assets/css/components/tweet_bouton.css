@@ -39,6 +39,14 @@
     background-color: rgba(0,0,0,0.5);
 }
 
+.tweet__filtre{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
 /* marge, police et taille du texte */
 .tweet__texte{
     margin: 0.5rem;
