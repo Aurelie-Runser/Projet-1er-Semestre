@@ -66,21 +66,27 @@ a{
     color: var(--color-lexique-claire);
 }
 
-.externe{
+.fonce{
     color: var(--color-lexique-fonce);
 }
 
 /* mise en page des citations */
-blockquote{
+blockquote,
+.citation_fonce{
     display: block;
     margin: 20px;
     padding: 5px 10px 5px 20px;
-    border-left: 5px dashed var(--color-elements-graphique);
+    border-left: 5px dashed var(--color-citation-claire);
 
     font-style: italic;
     font-weight: 1000;
-    color: var(--color-elements-graphique);
+    color: var(--color-citation-claire);
     font-size: var(--size-article-citation);
+}
+
+.citation_fonce{
+    border-left: 5px dashed var(--color-citation-fonce);
+    color: var(--color-citation-fonce);
 }
 
 /* textes décoratif */

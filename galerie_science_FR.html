@@ -38,23 +38,73 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
-                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="./">
+                            Accueil
+                        </a>
+                    </li>
                     <li class="deco">Articles</li>
-                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_resistance_FR.html">
+                            Les Femmes fond de la Résistance
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_interview_FR.html">
+                            Interview d'une future militaire
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_livre_FR.html">
+                            60 Femmes qui ont changé le monde
+                        </a>
+                    </li>
                     <li class="deco">Galerie</li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_science_FR.html">
+                            Science & Technologie
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_activiste_FR.html">
+                            Activistes & Révolutionnaires
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_politique_FR.html">
+                            Femmes de Pouvoir & Politique
+                        </a>
+                    </li>
                     <li class="espace"></li>
-                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="frise_FR.html">
+                            Frise chronologique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="lexique_FR.html">
+                            Lexique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="a_propos_FR.html">
+                            &Agrave Propos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="contact_FR.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="autres_projets_FR.html">
+                            Autres Projets
+                        </a>
+                    </li>
                 </ul>
             </nav>
+
+            <a href="#top"><img class="bouton_haut_de_page-galerie" src="assets/icones/FlecheHaut.svg" alt="fleche vers le haut"></a>
 
         </header>
 
@@ -104,125 +154,194 @@
                 </ul>
             </nav>
 
-            <div id="ada">
-                <h2>Ada Lovelace</h2>
-                <p>Années : 1815-1852 (36 ans)
-                    <br>Nationalité : Britannique
-                    <br>Métier : Mathématicienne
-                    <br>Principalement connue pour : être la 1ère programmeuse au monde
-                </p>
-                <img src="assets/img/science/Ada_Lovelace.webp" alt="Peinture d'Ada Lovelace">
-                <p>Ada Lovelace était naturellement doué avec nombres et les codes. Sa mère l’encouragea à étudier cette science et trouva des tuteurs pour l’instruire.</p>
-                <p>Durant ses études, elle rencontra plusieurs intellectuels, dont 
-                    <a href="lexique_FR.html#c">Charles Babbage</a>. Cet homme rédigea des plans d’une calculatrice mécanique, puis d’
-                    <a href="lexique_FR.html#m">une machine analytique</a>, sensé résoudre des calcules plus complexe. Ada fut fascinées par ces prototypes d’ordinateurs.
-                </p>
+            <div class="portrait__claire" id="ada">
+                <h2 class="portrait__titre">Ada Lovelace</h2>
+
+                <div class="portrait__header">
+                    <p class="portrait__header__texte">
+                            Années : <span class="portrait__texte__gras">1815-1852</span> (36 ans)
+                        <br>Nationalité : <span class="portrait__texte__gras">Britannique</span>
+                        <br>Métier : <span class="portrait__texte__gras">Mathématicienne</span>
+                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère programmeuse au monde</span>
+                    </p>
+                    <img class="portrait__img" src="assets/img/science/Ada_Lovelace.webp" alt="Peinture d'Ada Lovelace">
+                </div>
+
+                <div>
+                    <p class="portrait__body__texte">Ada Lovelace était naturellement doué avec nombres et les codes. Sa mère l’encouragea à étudier cette science et trouva des tuteurs pour l’instruire.</p>
+                    <p>Durant ses études, elle rencontra plusieurs intellectuels, dont 
+                        <a class="lien fonce" href="lexique_FR.html#c">Charles Babbage</a>. Cet homme rédigea des plans d’une calculatrice mécanique, puis d’
+                        <a class="lien fonce" href="lexique_FR.html#m">une machine analytique</a>, sensé résoudre des calcules plus complexe. Ada fut fascinées par ces prototypes d’ordinateurs.
+                    </p>
+                </div>
             </div>
 
-            <div id="elizabeth">
-                <h2>Elizabeth Blackwell</h2>
-                <p>Années : 1821-1910 (89 ans)
-                    <br>Nationalité : Anglaise
-                    <br>Métier : Médecin
-                    <br>Principalement connue pour : être la 1ère femme diplômée en médecine aux Etats-Unis en 1879
-                </p>
-                <img src="assets/img/science/Elizabeth_Blackwell.webp" alt="Photo d'Elizabeth Blackwell">
-                <p>Malgré qu’au 19ème siècle, être une fille et recevoir de l’éducation était déjà un miracle, Elizabeth Blackwell décida de devenir médecin. Elle postula dans de nombreuse école et 
-                    <a href="lexique_FR.html#h">le Hobart and William Smith College de Geneva</a>, près de New York, l’accepta en pensant qu’il s’agissait d’un canular. Ses études furent difficiles mais elle réussit à obtenir son diplôme en 1879. Ensuite, elle dut batailler pour trouver un emploi. Elle exerça à Londres et Paris.
-                </p>
-                <p>En 1857, elle fonde avec l’aide de sa sœur et d’un docteur 
-                    <a href="lexique_FR.html#d">un dispensaire</a> pour les familles pauvres de New York nommé le New York Infirmary for Women and Children. Des années plus tard, l’établissement commença à offrir aux femmes voulant exercer la médecine des formation théorique et pratique.
-                </p>
-                <p>Malgré ses problèmes de santé, Elizabeth Blackwell milita jusqu’à la fin de sa vie pour les droits des femmes et pour offrir à celles qui le souhaitaient un accès à des soins prodigués par un personnel médical féminin.</p>
-                <p>Elizabeth Blackwell a montré que femme et homme étaient égaux dans l’exercice de la médecine, chose qui aujourd’hui est devenue une évidence.</p>
+            <div class="portrait__fonce" id="elizabeth">
+                <h2 class="portrait__titre">Elizabeth Blackwell</h2>
+
+                <div class="portrait__header">
+                    <p class="portrait__header__texte">
+                            Années : <span class="portrait__texte__gras">1821-1910</span> (89 ans)
+                        <br>Nationalité : <span class="portrait__texte__gras">Anglaise</span>
+                        <br>Métier : <span class="portrait__texte__gras">Médecin</span>
+                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme diplômée en médecine aux Etats-Unis en 1879</span>
+                    </p>
+                    <img class="portrait__img" src="assets/img/science/Elizabeth_Blackwell.webp" alt="Photo d'Elizabeth Blackwell">
+                </div>
+
+                <div>
+                    <p class="portrait__body__texte">
+                        Malgré qu’au 19ème siècle, être une fille et recevoir de l’éducation était déjà un miracle, Elizabeth Blackwell décida de devenir médecin. Elle postula dans de nombreuse école et 
+                        <a class="lien claire" href="lexique_FR.html#h">le Hobart and William Smith College de Geneva</a>, près de New York, l’accepta en pensant qu’il s’agissait d’un canular. Ses études furent difficiles mais elle réussit à obtenir son diplôme en 1879. Ensuite, elle dut batailler pour trouver un emploi. Elle exerça à Londres et Paris.
+                    </p>
+                    <p>En 1857, elle fonde avec l’aide de sa sœur et d’un docteur 
+                        <a class="lien claire" href="lexique_FR.html#d">un dispensaire</a> pour les familles pauvres de New York nommé le New York Infirmary for Women and Children. Des années plus tard, l’établissement commença à offrir aux femmes voulant exercer la médecine des formation théorique et pratique.
+                    </p>
+                    <p>Malgré ses problèmes de santé, Elizabeth Blackwell milita jusqu’à la fin de sa vie pour les droits des femmes et pour offrir à celles qui le souhaitaient un accès à des soins prodigués par un personnel médical féminin.</p>
+                    <p>Elizabeth Blackwell a montré que femme et homme étaient égaux dans l’exercice de la médecine, chose qui aujourd’hui est devenue une évidence.</p>
+                </div>
             </div>
 
-            <div id="clara">
-                <h2>Clara Barton</h2>
-                <p>Années : 1821-1912 (91ans)
-                    <br>Nationalité : Américaine
-                    <br>Métier : Enseignante, Infirmière & Humanitaire
-                    <br>Principalement connue pour : avoir créer la Croix Rouge américaine en 1881
-                </p>
-                <img src="assets/img/science/Clara_Barton.webp" alt="Photo de Clara Barton">
-                <p>Clara Barton était une enseignante qui, lorsque 
-                    <a href="lexique_FR.html#g">la guerre de Sécession</a> avait commencé, avait décider d’apporter son aide aux soldats, d’abord en leur apportant des vivre durant l’année 1861, puis à partie de 1862 devint une infirmière. Elle fut surnommée « l’ange du champ de bataille ».
-                </p>
-                <p>En 1870, elle participa au Comité international de secours aux militaire blessés (ancien nom du comité international de la Croix-Rouge) lors de 
-                    <a href="lexique_FR.html#g">la guerre franco-allemande</a>.
-                </p>
-                <p>En 1881, Clara Barton crée 
-                    <a href="lexique_FR.html#c">la Croix Rouge</a> en Amérique et en fut la 1ère présidente.</p>
+            <div class="portrait__claire" id="clara">
+                <h2 class="portrait__titre">Clara Barton</h2>
+
+                <div class="portrait__header">
+                    <p class="portrait__header__texte">
+                            Années : <span class="portrait__texte__gras">1821-1912</span> (91ans)
+                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
+                        <br>Métier : <span class="portrait__texte__gras">Enseignante, Infirmière & Humanitaire</span>
+                        <br>Principalement connue pour : <span class="portrait__texte__gras">avoir créer la Croix Rouge américaine en 1881</span>
+                    </p>
+                    <img class="portrait__img" src="assets/img/science/Clara_Barton.webp" alt="Photo de Clara Barton">
+                </div>
+
+                <div>
+                    <p class="portrait__body__texte">Clara Barton était une enseignante qui, lorsque 
+                        <a class="lien fonce" href="lexique_FR.html#g">la guerre de Sécession</a> avait commencé, avait décider d’apporter son aide aux soldats, d’abord en leur apportant des vivre durant l’année 1861, puis à partie de 1862 devint une infirmière. Elle fut surnommée « l’ange du champ de bataille ».
+                    </p>
+                    <p>En 1870, elle participa au Comité international de secours aux militaire blessés (ancien nom du comité international de la Croix-Rouge) lors de 
+                        <a class="lien fonce" href="lexique_FR.html#g">la guerre franco-allemande</a>.
+                    </p>
+                    <p>En 1881, Clara Barton crée 
+                        <a class="lien fonce" href="lexique_FR.html#c">la Croix Rouge</a> en Amérique et en fut la 1ère présidente.
+                    </p>
+                </div>
             </div>
 
-            <div id="amelia">
-                <h2>Amélia Earhart</h2>
-                <p>Années : 1897-1937 (40 ans)
-                    <br>Nationalité : Américaine
-                    <br>Métier : Aviatrice
-                    <br>Principalement connue pour : Avoir réalisé de nombreux record dans le domaine de l’aviation
-                </p>
-                <img src="assets/img/science/Amelia_Earhart.webp" alt="Photo d'Amélia Earhart">
-                <p>Amélia Earhart eu une enfance inhabituelle pour l’époque car elle fut élevée comme un garçon. Elle pensait que les filles valaient tout autant que les hommes, donc qu’elles pouvaient aussi accomplir de grandes choses. Elle inspira de nombreuse femme à se lancer dans l’aventure malgré leurs peurs pour réaliser leurs rêves.</p>
-                <p>À la suite d’un baptême de l’aire en 1920, elle tombe amoureuse de l’aviation.</p>
-                <p>Elle fut la 1ère femme à traverser l’Atlantique en Avion en 1928, bien que durant son premier vol, elle ne fit que de la figuration, n’ayant pas encore assez de connaissance. </p>
-                <p>En 1932, elle réalisa son rêve et devint la 1ère femme et 2ème personne à accomplir un vol transatlantique en solo. Elle fut félicitée et reçu une médaille pour cette action.</p>
-                <p>Elle réalisa d’autre record, féminin et mixte, avant 1937, où elle décida d’effectuer un tour du monde en avion, chose qui n’était encore jamais arrivé. Malheureusement, le 29 juin 1937, les garde cotes perdirent la trace d’Amélia Earhart et de son copilote lors de leur traverser du Pacifique. L’épave et les corps n’ont jamais été retrouver.</p>
-                <blockquote>Les femmes doivent s’essayer aux mêmes choses que les hommes. Si elles échouent, cet échec doit servir de défi aux autres.</blockquote>
+            <div class="portrait__fonce" id="amelia">
+                <h2 class="portrait__titre">Amélia Earhart</h2>
+
+                <div class="portrait__header">
+                    <p class="portrait__header__texte">
+                            Années : <span class="portrait__texte__gras">1897-1937</span> (40 ans)
+                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
+                        <br>Métier : <span class="portrait__texte__gras">Aviatrice</span>
+                        <br>Principalement connue pour : <span class="portrait__texte__gras">Avoir réalisé de nombreux record dans le domaine de l’aviation</span>
+                    </p>
+                    <img class="portrait__img" src="assets/img/science/Amelia_Earhart.webp" alt="Photo d'Amélia Earhart">
+                </div>
+
+                <div>
+                    <p class="portrait__body__texte">Amélia Earhart eu une enfance inhabituelle pour l’époque car elle fut élevée comme un garçon. Elle pensait que les filles valaient tout autant que les hommes, donc qu’elles pouvaient aussi accomplir de grandes choses. Elle inspira de nombreuse femme à se lancer dans l’aventure malgré leurs peurs pour réaliser leurs rêves.</p>
+                    <p>À la suite d’un baptême de l’aire en 1920, elle tombe amoureuse de l’aviation.</p>
+                    <p>Elle fut la 1ère femme à traverser l’Atlantique en Avion en 1928, bien que durant son premier vol, elle ne fit que de la figuration, n’ayant pas encore assez de connaissance. </p>
+                    <p>En 1932, elle réalisa son rêve et devint la 1ère femme et 2ème personne à accomplir un vol transatlantique en solo. Elle fut félicitée et reçu une médaille pour cette action.</p>
+                    <p>Elle réalisa d’autre record, féminin et mixte, avant 1937, où elle décida d’effectuer un tour du monde en avion, chose qui n’était encore jamais arrivé. Malheureusement, le 29 juin 1937, les garde cotes perdirent la trace d’Amélia Earhart et de son copilote lors de leur traverser du Pacifique. L’épave et les corps n’ont jamais été retrouver.</p>
+                    <blockquote>Les femmes doivent s’essayer aux mêmes choses que les hommes. Si elles échouent, cet échec doit servir de défi aux autres.</blockquote>
+                </div>
             </div>
 
-            <div id="sally">
-                <h2>Sally Ride</h2>
-                <p>Années : 1951-2012 (61 ans)
-                    <br>Nationalité : Américaine
-                    <br>Métier : Astronaute & Astrophysicienne
-                    <br>Principalement connue pour : être la 1ère femme américaine à aller dans l’espace
-                </p>
-                <img src="assets/img/science/Sally_Ride.webp" alt="Photo de Sally Ride">
-                <p>Sally Ride fut sélectionnée en 1978 par la Nasa qui prévoit de former des astronautes parmi près d’un millier de candidats. Après des années d’entrainement intensif, elle fut choisie pour participer à la mission spatiale de la navette Challenger en juin 1983. Elle est donc la 1ère femme américaine à aller dans l’espace et occupa même une place importante dans l’équipage. En octobre de la même année, elle retourne dans l’espace en tant que spécialiste de mission.</p>
-                <p>Elle finit par quitter la Nasa et fonda en 2001 sa société, Sally Ride Science, qui a pour but de donner envie aux enfants d’apprendre les sciences et les rendant divertissant et intéressant.</p>
-                <blockquote>J’ignore pourquoi, mais je n’ai jamais cédé au stéréotype qui voulait que les sciences ne soient pas pour les filles. Mes parents m’y ont encouragée. A la différence de beaucoup de mes amies, je n’ai jamais écouté les professeurs ou les conseillers d’éducation.</blockquote>
+            <div class="portrait__claire" id="sally">
+                <h2 class="portrait__titre">Sally Ride</h2>
+
+                <div class="portrait__header">
+                    <p class="portrait__header_texte">
+                            Années : <span class="portrait__texte__gras">1951-2012</span> (61 ans)
+                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
+                        <br>Métier : <span class="portrait__texte__gras">Astronaute & Astrophysicienne</span>
+                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme américaine à aller dans l’espace</span>
+                    </p>
+                    <img class="portrait__img" src="assets/img/science/Sally_Ride.webp" alt="Photo de Sally Ride">
+                </div>
+
+                <div>
+                    <p class="portrait__body__texte">Sally Ride fut sélectionnée en 1978 par la Nasa qui prévoit de former des astronautes parmi près d’un millier de candidats. Après des années d’entrainement intensif, elle fut choisie pour participer à la mission spatiale de la navette Challenger en juin 1983. Elle est donc la 1ère femme américaine à aller dans l’espace et occupa même une place importante dans l’équipage. En octobre de la même année, elle retourne dans l’espace en tant que spécialiste de mission.</p>
+                    <p>Elle finit par quitter la Nasa et fonda en 2001 sa société, Sally Ride Science, qui a pour but de donner envie aux enfants d’apprendre les sciences et les rendant divertissant et intéressant.</p>
+                    <blockquote class="citation_fonce">J’ignore pourquoi, mais je n’ai jamais cédé au stéréotype qui voulait que les sciences ne soient pas pour les filles. Mes parents m’y ont encouragée. A la différence de beaucoup de mes amies, je n’ai jamais écouté les professeurs ou les conseillers d’éducation.</blockquote>
+                </div>
             </div>
 
-            <div>
-                <a href="#top"><img src="assets/icones/FlecheHaut.svg" alt="Bouton retour en haut de page"></a>
-                <h2>Autres pages Galerie</h2>
-                <a href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a>
-                <a href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a>
-            </div>
+            <section>
+                <h2 class="deco deco_article">Autres pages Galerie</h2>
+
+                <div class="boutons__aligne--droite">
+
+                    <div class="bouton boutons_pages">
+                        <a href="galerie_activiste_FR.html">
+                            <span class="bouton__contenu">
+                                Activistes & Révolutionnaires
+                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="bouton boutons_pages">
+                        <a href="galerie_politique_FR.html">
+                            <span class="bouton__contenu">
+                                Femmes de Pouvoir & Politique
+                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            </span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
             
         </main>
 
         <footer>
-            <header>
-                <p>Aurélie Runser - C1</p>
-                <address>
-                    <a href="mailto:femmesfortes@gmail.com">Contact : femmesfortes@gmail.com</a>
+            <header class="footer__header">
+                <p class="footer__header__texte">Aurélie Runser - C1</p>
+                <address class="footer__header__texte">
+                    <span class="footer__header__texte">Contact :
+                        <a href="mailto:femmesfortes@gmail.com">femmesfortes@gmail.com</a>
+                    </span>
                 </address>
             </header>
-
+    
+            <div>
+                <ul class="listUnstyles footer__liste-reseaux">
+                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                                alt="Twitter"></a></li>
+                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                                alt="Instagram"></a></li>
+                </ul>
+            </div>
+            <hr class="ligne_pointie">
+    
             <nav>
                 <h3>Menu</h3>
-                <ul>
-                    <li><a href="./">Accueil</a></li>
-                    <li><a href="#">&Agrave Propos</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Autres Projets</a></li>
+                <ul class="listUnstyles footer__liste-menu">
+                    <li class="footer__liste-item"><a href="./">Accueil</a></li>
+                    <li class="footer__liste-item"><a href="a_propos_FR.html">&Agrave Propos</a></li>
+                    <li class="footer__liste-item"><a href="contact_FR.html">Contact</a></li>
+                    <li class="footer__liste-item"><a href="autres_projets_FR.html">Autres Projets</a></li>
                 </ul>
             </nav>
-
-            <h3>Suivre Femmes Fortes</h3>
-            <ul>
-                <li><a href="https://facebook.com"><img src="assets/icones/Facebook.svg" alt="Facebook"></a></li>
-                <li><a href="https://twitter.com"><img src="assets/icones/Twitter.svg" alt="Twitter"></a></li>
-                <li><a href="https://instagramcom"><img src="assets/icones/Instagram.svg" alt="Instagram"></a></li>
-            </ul>
-
-            <div>
-                <a href="#"><img src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-                <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard<br>Tout droit réservé</p>
-            </div>
-            
+            <hr class="ligne_pointie">
+    
+            <footer class="footer__footer">
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
+                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
+                    Montbéliard.
+                    <br>Tout droit réservé.
+                </p>
+            </footer>
+    
         </footer>
     </body>
 </html>

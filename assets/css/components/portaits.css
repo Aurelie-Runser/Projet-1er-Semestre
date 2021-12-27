@@ -1,0 +1,55 @@
+/* mise en forme des portraits et couleur */
+
+.portrait__claire{
+    display: grid; 
+    background-color: var(--color-fond-blanc);
+    color: var(--color-texte-noir);
+}
+
+.portrait__fonce{
+    display: grid; 
+    background-color: var(--color-fond-noir);
+    color: var(--color-texte-blanc);
+}
+
+/* mise au centre du titre */
+.portrait__titre{
+    text-align: center;
+    margin: 1rem;
+}
+
+/* en-tete : informations rapides + image */
+.portrait__header{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;   
+}
+
+/* taille et marge de l'image */
+.portrait__img{
+    width: auto;
+    height: 250px;
+    margin-right: 10px;
+    right: 0px;
+}
+
+/* marge du texte avec les infos rapides */
+.portrait__header__texte{
+    margin: 0 5px 0 20px;
+}
+
+/* mise en gras des infos */
+.portrait__texte__gras{
+    font-weight: bold;
+}
+
+/* marge sur le texte */
+.portrait__body__texte{
+    margin: 20px;
+}
+
+/* mise en valeur de la 1ere lettre du texte */
+.portrait__body__texte::first-letter{
+    font-size: var(--size-article-intertitre);
+}
