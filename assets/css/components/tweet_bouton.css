@@ -97,8 +97,11 @@
 /* placement du bouton par rapport à l'image */
 .tweet__galerie__bouton{  
     position: absolute;
-    right: 2%;
-    top: 0%;
+    right: -5px;
+    top: -10px;
+    padding: 10px;
+    border-radius: 0 0 10px 0;
+    background-color: var(--color-fond-blanc);
 }
 
 
