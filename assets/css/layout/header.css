@@ -35,10 +35,12 @@
 .femmes_fortes{
     color: var(--color-titre-violet);
     font-size: var(--size-titre-femmes-fortes);
+    background-color: rgba(0,0,0,0.50);
 }
 
 .titre{
     font-size: var(--size-titre-page);
+    background-color: rgba(0,0,0,0.50);
 }
 
 /* Image de fond de chaque header */
@@ -46,29 +48,47 @@
 .header__revolution{
     background-image: url("../../img/header/header_article_revolution.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }
 
 .header__interview{
     background-image: url("../../img/header/header_article_interview.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }
 
 .header__livre{
     background-image: url("../../img/header/header_article_livre.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }
 
 .header__science{
     background-image: url("../../img/header/header_galerie_science.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }
 
 .header__activistes{
     background-image: url("../../img/header/header_galerie_activistes.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }
 
 .header__politique{
     background-image: url("../../img/header/header_galerie_politique.webp");
     background-size: contain;
+    width: 100%;
+    height: 160px;
+    display: grid;
 }

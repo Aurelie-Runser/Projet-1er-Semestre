@@ -96,7 +96,6 @@
 
 /* TWEET FRISE + AUTRES PROJETS */
 
-
 .tweet__autre__header{
     position: relative;
     width: 100%;
@@ -120,10 +119,9 @@
     top: 5%;   
 }
 
-/* BOUTONS NOIRS */
 
+/* BOUTON */
 
-/* Boutons */
 
 /* suppression des décorations mis automatiquement sur les bouttons */
 button {
@@ -132,7 +130,6 @@ button {
     border: none;
     background: none;
     padding: 0;
-
 }
 
 /* tourné la fleche pour qu'elle pointe vers la droite */
@@ -143,8 +140,14 @@ button {
     margin: 10px;
     margin-right: 1px;
 }
-/* Mise en forme de l'image et du texte du bouton */
 
+.bouton__galerie-fleche{
+    transform: rotate(180deg);
+    margin: 10px;
+    margin-right: 1px;
+}
+
+/* Mise en forme de l'image et du texte du bouton */
 .bouton__contenu{
     background-color: var(--color-fond-noir);
     height: 50px;
@@ -160,8 +163,7 @@ button {
     padding-right: 2%;
 }
 
-/* alignement à droite des boutons */
-
+/* alignement à droite des boutons en fin de page*/
 .boutons__aligne--droite{
     display: grid;
     width: 100%;
@@ -170,6 +172,18 @@ button {
 .boutons_pages{
     justify-self: right;
     margin: 0 0 20px 0;
+}
+
+.boutons_pages-galerie{
+    justify-self: right;
+    margin: 30px 0 0 0;
+}
+
+/* boutons des femmes dans la galerie */
+.bouton__galerie{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
 }
 
 /* bouton sur les pages article qui permet de retournern en haut de la page */

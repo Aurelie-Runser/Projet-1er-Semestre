@@ -10,6 +10,7 @@
 /* Compenents */
 @import url("components/menu.css");
 @import url("components/tweet_bouton.css");
+@import url("components/portaits.css");
 
 /* Layout */
 @import url("layout/article.css");
