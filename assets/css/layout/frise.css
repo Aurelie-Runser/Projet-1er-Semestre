@@ -1,3 +1,4 @@
+/* Permet de mettre le texte à côté de la felche */
 .frise{
     display: flex;
     height: auto;
@@ -5,6 +6,9 @@
     padding-left: 30px;
 }
 
+/* LA FLECHE */
+
+/* Mise en forme de la fleche */
 .fleche{
     display: flex;
     flex-direction: column;
@@ -13,14 +17,38 @@
     align-items: center;
 }
 
+/* le trait de la fleche */
 .fleche__ligne{
     width: 30px;
     height: 100%;
     background-color: var(--color-fond-blanc);
 }
 
+/* la pointe de la fleche */
 .fleche__triangle{
     border-top : 43px solid var(--color-fond-blanc);
     border-right : 25px solid transparent;
     border-left : 25px solid transparent;
+}
+
+/* LE TEXTE */
+
+.frise__texte{
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+/* les dates */
+.texte__date{
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-date);
+}
+
+.texte__fleche{
+    left: 10%;
+    border-top : 26px solid var(--color-fond-blanc);
+    border-right : 16px solid transparent;
+    border-left : 16px solid transparent;
 }

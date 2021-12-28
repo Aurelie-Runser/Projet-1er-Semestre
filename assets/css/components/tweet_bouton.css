@@ -214,3 +214,38 @@ button {
     border-radius: 90%;
     background-color: var(--color-fond-rouge);
 }
+
+/* BOUTONS AUTRES PROJETS */
+
+.bouton__projet{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin: 25px;
+    border-radius: 10px;
+    font-family: var(--font-machine);
+    font-size: var(--size-article-sous-titre);
+    text-align: center;
+}
+
+.projet__start{
+    height: 50%;
+    width: 100%;
+    padding: 5px;
+    color: var(--color-texte-blanc);
+    background-color: var(--color-bouton);
+}
+
+.projet__end{
+    height: 50%;
+    width: 100%;
+    padding: 5px;
+    color: var(--color-texte-noir);
+    background-color: var(--color-fond-blanc);
+}
+
+.projet__titre{
+    font-size: var(--size-article-intertitre);
+}

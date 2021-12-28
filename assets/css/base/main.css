@@ -89,6 +89,14 @@ blockquote,
     color: var(--color-citation-fonce);
 }
 
+.texte__centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: var(--size-article-sous-titre);
+}
+
 /* textes décoratif */
 .deco{
     font-family: var(--font-manuscrit);
