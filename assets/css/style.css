@@ -13,9 +13,10 @@
 @import url("components/portaits.css");
 
 /* Layout */
-@import url("layout/article.css");
 @import url("layout/header.css");
 @import url("layout/footer.css");
+@import url("layout/article.css");
+@import url("layout/frise.css");
 
 /* Utils */
 @import url("utils/variables.css");

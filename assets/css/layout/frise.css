@@ -1,0 +1,26 @@
+.frise{
+    display: flex;
+    height: auto;
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.fleche{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 5px 5px 0 0;
+    align-items: center;
+}
+
+.fleche__ligne{
+    width: 30px;
+    height: 100%;
+    background-color: var(--color-fond-blanc);
+}
+
+.fleche__triangle{
+    border-top : 43px solid var(--color-fond-blanc);
+    border-right : 25px solid transparent;
+    border-left : 25px solid transparent;
+}
