@@ -233,7 +233,7 @@ button {
 .projet__start{
     height: 50%;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     color: var(--color-texte-blanc);
     background-color: var(--color-bouton);
 }
@@ -241,7 +241,7 @@ button {
 .projet__end{
     height: 50%;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     color: var(--color-texte-noir);
     background-color: var(--color-fond-blanc);
 }
