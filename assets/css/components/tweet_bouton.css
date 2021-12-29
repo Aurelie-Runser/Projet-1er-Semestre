@@ -203,18 +203,6 @@ button,
     margin: 20px 40px;
 }
 
-/* bouton sur les pages galerie qui permet de retournern en haut de la page */
-.bouton_haut_de_page-galerie{
-    display: flex;
-    z-index: 1;
-    position: fixed;
-    bottom: 50px;
-    left: 50%;
-    padding: 7px;
-    border-radius: 90%;
-    background-color: var(--color-fond-rouge);
-}
-
 /* BOUTONS AUTRES PROJETS */
 
 .bouton__projet{
