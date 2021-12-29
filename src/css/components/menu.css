@@ -18,11 +18,13 @@
     top: 10%;
 }
 
+/* placement de la liste à droite de l'ecran */
 .menu__list{
     width: 100%;
     text-align: right;
 }
 
+/* mise en forme du texte */
 .menu__item{
     font-family: var(--font-manuscrit);
     font-size: var(--size-menu); 
@@ -30,15 +32,20 @@
     margin-top: 10px;
 }
 
-.menu__img{
-    width: 100%;
-}
-
+/* mise en place du bouton burger */
 .menu-btn {
     position: relative;
     transition: all .5s;
 }
 
+/* bouton burger ouvert */
 .menu-btn--open{
     transform: rotate(-90deg);
+}
+
+/* element non visible, sert à ce que le menu descende sous la banniere */
+.cache{
+    display: block;
+    height: 82px;
+    background-color: var(--color-fond-noir);
 }

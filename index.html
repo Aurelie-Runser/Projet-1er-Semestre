@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <title>Accueil Femmes Fortes</title>
     </head>
@@ -15,23 +15,21 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg"
+                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg"
                             alt="Bouton changer en anglais"></a>
                 </div>
-
-                <!--<a href="menu_FR.html"></a>-->
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                     @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
                 </button>
 
             </nav>
 
             <div class="cache"></div>
-            <img src="assets/img/header/header_Fr.webp" alt="Banniere">
+            <img src="public/img/header/header_Fr.webp" alt="Banniere">
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
@@ -39,7 +37,6 @@
                         <a class="menu__lien" href="./">
                             Accueil
                         </a>
-                    
                     </li>
                     <li class="deco">Articles</li>
                     <li class="menu__item">
@@ -115,7 +112,12 @@
                 </p>
 
                 <center>
-                    <video class="video" src="exemple.mp4" width=340 height=191 controls poster="vignette.jpg">
+                    <video class="video" 
+                            src="exemple.mp4" 
+                            width=340 
+                            height=191 
+                            controls 
+                            poster="vignette.jpg">
                     </video>
                 </center>
 
@@ -130,7 +132,7 @@
                 <article class="tweet">
                     <a href="article_resistance_FR.html">
                         <div class="tweet__header">
-                            <img class="tweet__img" src="assets/img/header/header_article_revolution.webp"
+                            <img class="tweet__img" src="public/img/header/header_article_resistance.webp"
                                 alt="image article revolution">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__title">Les Femmes font de la Résistance</h3>
@@ -139,7 +141,7 @@
                             Comment ont-elles contribué à la victoire de la guerre alors que tout les en empêchaient ?</p>
                         <div class="tweet__bouton">
                             Lire l'article
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </article>
@@ -147,7 +149,7 @@
                 <article class="tweet">
                     <a href="article_interview_FR.html">
                         <div class="tweet__header">
-                            <img class="tweet__img" src="assets/img/header/header_article_interview.webp"
+                            <img class="tweet__img" src="public/img/header/header_article_interview.webp"
                                 alt="image article interview">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__title">Interview d'une future militaire</h3>
@@ -156,7 +158,7 @@
                             les yeux d’une féministe de 2021 !</p>
                         <div class="tweet__bouton">
                             Lire l'article
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </article>
@@ -164,7 +166,7 @@
                 <article class="tweet">
                     <a href="article_livre_FR.html">
                         <div class="tweet__header">
-                            <img class="tweet__img" src="assets/img/livre/couverture.webp" alt="image article livre">
+                            <img class="tweet__img" src="public/img/header/header_article_livre.webp" alt="image article livre">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__title">60 Femmes qui ont changé le monde</h3>
                         </div>
@@ -172,7 +174,7 @@
                             de femmes ayant impacté notre société, parfait pour étendre sa culture générale !</p>
                         <div class="tweet__bouton">
                             Lire l'article
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </article>
@@ -188,11 +190,11 @@
                 <div class="tweet">
                     <a href="galerie_science_FR.html">
                         <div class="tweet__galerie__header">
-                            <img class="tweet__img" src="assets/img/header/header_galerie_science.webp"
+                            <img class="tweet__img" src="public/img/header/header_galerie_science.webp"
                                 alt="image galerie science et technologie">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__galerie__title">Science & Technologie</h3>
-                            <img class="tweet__galerie__bouton" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__galerie__bouton" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </div>
@@ -200,11 +202,11 @@
                 <div class="tweet">
                     <a href="galerie_activiste_FR.html">
                         <div class="tweet__galerie__header">
-                            <img class="tweet__img" src="assets/img/header/header_galerie_activistes.webp"
+                            <img class="tweet__img" src="public/img/header/header_galerie_activistes.webp"
                                 alt="image galerie activistes et révolutionnaires">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__galerie__title">Activistes & Révolutionnaires</h3>
-                            <img class="tweet__galerie__bouton" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__galerie__bouton" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </div>
@@ -212,11 +214,11 @@
                 <div class="tweet">
                     <a href="galerie_politique_FR.html">
                         <div class="tweet__galerie__header">
-                            <img class="tweet__img" src="assets/img/header/header_galerie_politique.webp"
+                            <img class="tweet__img" src="public/img/header/header_galerie_politique.webp"
                                 alt="image galerie politiques et pouvoir">
                             <h2 class="tweet__filtre"> </h2>
                             <h3 class="tweet__galerie__title">Femmes de Pouvoir & Politique</h3>
-                            <img class="tweet__galerie__bouton" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__galerie__bouton" src="public/icones/Fleche.svg" alt="fleche">
                         </div>
                     </a>
                 </div>
@@ -228,7 +230,7 @@
                 <a href="frise_FR.html">
                     <div class="tweet__autre__header">
                         <h3 class="tweet__autre__title">Frise chronologique</h3>
-                        <img class="tweet__autre__bouton" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                        <img class="tweet__autre__bouton" src="public/icones/Fleche.svg" alt="fleche">
                     </div>
                     <p class="tweet__texte">Des dates importantes pour l’évolution de la femme en société</p>
                 </a>
@@ -238,7 +240,7 @@
                 <a href="autres_projets_FR.html">
                     <div class="tweet__autre__header">
                         <h3 class="tweet__autre__title">Autres Projets</h3>
-                        <img class="tweet__autre__bouton" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                        <img class="tweet__autre__bouton" src="public/icones/Fleche.svg" alt="fleche">
                     </div>
                     <p class="tweet__texte">Ce site vous à plus ? Aller découvrir les autres projets des 1ères années en MMI
                         de Montbéliard sur
@@ -253,7 +255,7 @@
                     <a href="lexique_FR.html">
                         <span class="bouton__contenu">
                             Lexique
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </span>
                     </a>
                 </div>
@@ -262,7 +264,7 @@
                     <a href="a_propos_FR.html">
                         <span class="bouton__contenu">
                             &Agrave Propos
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </span>
                     </a>
                 </div>
@@ -271,7 +273,7 @@
                     <a href="contact_FR.html">
                         <span class="bouton__contenu">
                             Contact
-                            <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                            <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                         </span>
                     </a>
                 </div>
@@ -292,11 +294,11 @@
 
             <div>
                 <ul class="listUnstyles footer__liste-reseaux">
-                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                    <li><a href="https://facebook.com" target="_blank"><img src="public/icones/Facebook.svg"
                                 alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                    <li><a href="https://twitter.com" target="_blank"><img src="public/icones/Twitter.svg"
                                 alt="Twitter"></a></li>
-                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                    <li><a href="https://instagram.com" target="_blank"><img src="public/icones/Instagram.svg"
                                 alt="Instagram"></a></li>
                 </ul>
             </div>
@@ -314,10 +316,9 @@
             <hr class="ligne_pointie">
 
             <footer class="footer__footer">
-                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
-                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
-                    Montbéliard.
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank">
+                    <img src="public/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
                     <br>Tout droit réservé.
                 </p>
             </footer>

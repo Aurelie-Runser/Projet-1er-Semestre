@@ -1,11 +1,14 @@
+/* mise de la police simple sur les titre de la page "contact" */
 .contacte__titre{
     font-family: var(--font-texte);
 }
 
+/* mise en majuscule pour le mot "NOM" */
 .contact__majuscule{
     text-transform: uppercase;
 }
 
+/* mise en forme des champs de saisis */
 select,
 option,
 .champs{
@@ -20,28 +23,41 @@ option,
     color: var(--color-texte-blanc);
 }
 
-select{
+/* suppression de la mise en forme basique de la liste */
+select,
+option{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url("../../icones/FlecheBas.svg");
+}
+
+/* mise en place de la fleche dans la liste */
+select{
+    background-image: url("../../../public/icones/FlecheBlanche.svg");
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: center;
 }
 
 option{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background: var(--color-fond-noir);
 }
 
+/* marge pour le captcha */
 .marge_capcha{
     margin: 30px;
     width: 80%;
 }
 
+/* mise en forme du texte d'information à la fin du formulaire */
+.ps{
+    padding: 30px 20px 0 0;
+    text-align: right;
+    font-size: var(--size-tweet-texte);
+    color: var(--color-elements-graphique);
+}
+
+/* mise en place et forme du popup de confirmation d'envoie du message */
 .popup_envoye{
     position: fixed;
     z-index: 1;

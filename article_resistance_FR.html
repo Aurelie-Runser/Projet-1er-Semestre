@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Article : Les Femmes fond de la Résistance</title>
@@ -15,17 +15,15 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
-
-                <!--<a href="menu_FR.html"></a>-->
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                     @pointerdown="menuIsOpen = !menuIsOpen" 
                     :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
                 </button>
 
             </nav>
@@ -38,21 +36,69 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
-                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="./">
+                            Accueil
+                        </a>
+                    </li>
                     <li class="deco">Articles</li>
-                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_resistance_FR.html">
+                            Les Femmes fond de la Résistance
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_interview_FR.html">
+                            Interview d'une future militaire
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_livre_FR.html">
+                            60 Femmes qui ont changé le monde
+                        </a>
+                    </li>
                     <li class="deco">Galerie</li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_science_FR.html">
+                            Science & Technologie
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_activiste_FR.html">
+                            Activistes & Révolutionnaires
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_politique_FR.html">
+                            Femmes de Pouvoir & Politique
+                        </a>
+                    </li>
                     <li class="espace"></li>
-                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="frise_FR.html">
+                            Frise chronologique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="lexique_FR.html">
+                            Lexique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="a_propos_FR.html">
+                            &Agrave Propos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="contact_FR.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="autres_projets_FR.html">
+                            Autres Projets
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -81,7 +127,7 @@
                 <blockquote>À la Libération, on était prête pour le Tour de France !</blockquote>
                 <p>En effet, les informations devaient être impérativement transmises, donc les femmes devaient faire la route peu importe le temps et la distance. De plus, elles étaient moins suspectées par les soldats que les hommes. Elles étaient donc de véritable atout pour la Résistance. Jugées innocentes, inoffensives, elles se déplaçaient beaucoup plus facilement.</p>
                 <figure>
-                    <img src="assets/img/resistance/velo.webp" alt="Photo du défilé des agents de liaison lors de la Libération">
+                    <img src="public/img/article/resistance/velo.webp" alt="Photo du défilé des agents de liaison lors de la Libération">
                     <figcaption>Photo du défilé des agents de liaison lors de la Libération</figcaption>
                 </figure>
                 <p>Certaines accueillaient chez elles des prisonniers en fuitent, des alliées, des résistants et des juifs. Leur maison étaient des points de relai indispensable au fonctionnement de la Résistance.</p>
@@ -98,7 +144,7 @@
                     <a class="lien claire" href="lexique_FR.html#f">fusilieur-voltigeur</a> en 1ère ligne.</p>
                 <p>La Résistance était un milieu moins sexiste que d'autres, car le principal critère était la volonté à combattre l'ennemie.</p>
                 <figure>
-                    <img src="assets/img/resistance/resistantes.webp" alt="Photo de résistantes engagées dans les FFI">
+                    <img src="public/img/article/resistance/resistantes.webp" alt="Photo de résistantes engagées dans les FFI">
                     <figcaption>Photo de résistantes engagées dans les FFI</figcaption>
                 </figure>
             </div>
@@ -109,7 +155,7 @@
                 <p>Cependant, dans la vie de tous les jours, tout est redevenue comme avant. Les hommes au travail et les femmes à la maison. Là plus par des résistantes retournaient simplement chez elles et reprenaient leur vie de femme, de mère et d’épouse. Cela est dû, en partie, à la volonté de vouloir oublier la guerre et tout ce qui s’y rattache.</p>
                 <p>Très peu de femme se revendiquait ayant été dans le Résistance, car elles ne voulaient pas témoigner, de peur de ne pas être cru, et de se remémorer les horreurs qu’elles avaient vue. La majorité de leurs actions n’étaient pas sur le front mais des actions intermédiaires, en retrait, tel que la logistique, le ravitaillement, les liaisons ou le repérage. Ces taches, moins impressionnantes, étaient souvent oublier.</p>
                 <figure>
-                    <img src="assets/img/resistance/femmes_armees.webp" alt="Photo de femmes armées">
+                    <img src="public/img/article/resistance/femmes_armees.webp" alt="Photo de femmes armées">
                     <figcaption>Photo de femmes armées</figcaption>
                 </figure>
             </div>
@@ -120,7 +166,7 @@
             </div>
 
             <section>
-                <a href="#top"><img class="bouton_haut_de_page-article" src="assets/icones/FlecheHaut.svg" alt="Bouton retour en haut de page"></a>
+                <a href="#top"><img class="bouton_haut_de_page-article" src="public/icones/Fleche.svg" alt="Bouton retour en haut de page"></a>
                 <h2 class="deco deco_article">Autres Articles</h2>
 
                 <div class="boutons__aligne--droite">
@@ -129,7 +175,7 @@
                         <a href="article_interview_FR.html">
                             <span class="bouton__contenu">
                                 Interview d'une future militaire
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -138,7 +184,7 @@
                         <a href="article_livre_FR.html">
                             <span class="bouton__contenu">
                                 60 Femmes qui ont changé le monde
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -157,19 +203,19 @@
                     </span>
                 </address>
             </header>
-    
+
             <div>
                 <ul class="listUnstyles footer__liste-reseaux">
-                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                    <li><a href="https://facebook.com" target="_blank"><img src="public/icones/Facebook.svg"
                                 alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                    <li><a href="https://twitter.com" target="_blank"><img src="public/icones/Twitter.svg"
                                 alt="Twitter"></a></li>
-                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                    <li><a href="https://instagram.com" target="_blank"><img src="public/icones/Instagram.svg"
                                 alt="Instagram"></a></li>
                 </ul>
             </div>
             <hr class="ligne_pointie">
-    
+
             <nav>
                 <h3>Menu</h3>
                 <ul class="listUnstyles footer__liste-menu">
@@ -180,16 +226,15 @@
                 </ul>
             </nav>
             <hr class="ligne_pointie">
-    
+
             <footer class="footer__footer">
-                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
-                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
-                    Montbéliard.
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank">
+                    <img src="public/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
                     <br>Tout droit réservé.
                 </p>
             </footer>
-    
+
         </footer>
     </body>
 </html>

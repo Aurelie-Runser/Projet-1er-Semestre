@@ -1,9 +1,11 @@
+/* mise en forme du chapo dans les articles */
 .chapo{
     font-family: var(--font-chapo);
     font-style: italic;
     font-weight: 1000;
 }
 
+/* mise en avant de la 1ere lettre du chapo */
 .chapo::first-letter{
     font-size: var(--size-article-intertitre);
 }

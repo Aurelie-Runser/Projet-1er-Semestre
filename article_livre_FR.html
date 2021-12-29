@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Article : 60 Femmes qui ont changé le monde</title>
@@ -15,17 +15,15 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
-
-                <!--<a href="menu_FR.html"></a>-->
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                     @pointerdown="menuIsOpen = !menuIsOpen" 
                     :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
                 </button>
 
             </nav>
@@ -38,21 +36,69 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
-                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="./">
+                            Accueil
+                        </a>
+                    </li>
                     <li class="deco">Articles</li>
-                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_resistance_FR.html">
+                            Les Femmes fond de la Résistance
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_interview_FR.html">
+                            Interview d'une future militaire
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_livre_FR.html">
+                            60 Femmes qui ont changé le monde
+                        </a>
+                    </li>
                     <li class="deco">Galerie</li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_science_FR.html">
+                            Science & Technologie
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_activiste_FR.html">
+                            Activistes & Révolutionnaires
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_politique_FR.html">
+                            Femmes de Pouvoir & Politique
+                        </a>
+                    </li>
                     <li class="espace"></li>
-                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="frise_FR.html">
+                            Frise chronologique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="lexique_FR.html">
+                            Lexique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="a_propos_FR.html">
+                            &Agrave Propos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="contact_FR.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="autres_projets_FR.html">
+                            Autres Projets
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -63,7 +109,7 @@
                 <p class="chapo">Le livre Elles ont changé le monde a été écrit par Lewis Carrie et traduit de l’anglais par Chantal Mitjaville. Ce livre, paru en 2019, décrit le portrait de 60 femmes qui ont joué ou jouent un rôle important dans notre société. Ces femmes peu connues, viennent de toutes les régions du monde, de domaines variés et de différentes époques, allant du 16ème siècle à aujourd’hui.</p>
 
                 <figure>
-                    <img src="assets/img/livre/couverture.webp" alt="Couverture de Elles ont changé le monde">
+                    <img src="public/img/article/livre/couverture.webp" alt="Couverture de Elles ont changé le monde">
                     <figcaption>Couverture de Elles ont changé le monde</figcaption>
                 </figure>
             </div>
@@ -75,7 +121,7 @@
                 <p>Dans chaque domaine, plus ou moins de femme sont connus, permettant d’en apprendre plus sur elles. D’autres le sont beaucoup moins. Ce livre permet donc d’acquérir une plus grande culture en matière de visage féminin important.</p>
                 <p>Chaque fille est accompagnée d’une photo d’elle, ou d’une peinture si la photographie n’existait pas encore, ainsi que de photos de leurs actions ou remise de prix.</p>
                 <figure>
-                    <img src="assets/img/livre/page.webp" alt="Photo d’une page de Elles ont changé le monde">
+                    <img src="public/img/article/livre/page.webp" alt="Photo d’une page de Elles ont changé le monde">
                     <figcaption>Photo d’une page de Elles ont changé le monde</figcaption>
                 </figure>
                 <p>Toutes les descriptions sont présentées sous la même forme. Tout d'abord, le prénom et le nom de la femme. En sous-titre, ce trouve sa date de naissance et de mort. Sa nationalité ainsi que son activité y sont précisées. Le texte est composé de deux parties. D'abord une amorce sous forme d'un paragraphe. Elle explique en quoi cette femme à changer le monde. Ensuite, la majorité du texte est une biographie. Cette dernière s'étend de son enfance à sa mort, tout en étant centré sur ses actions.</p>
@@ -87,7 +133,7 @@
                 <p>Il y a celles qui ont prouvé qu’une femme pouvait réussir dans un milieu jusque-là jugé masculin, comme Marie Curie dans la science, Elizabeth Blackwell dans la médecine, Aphra Behn dans la littérature, irimavo Bandarabaike en politique ou encore toutes les grandes sportives.</p>
                 <p>D’autre ont marqué le monde par leurs vie, Coco Chanel, Rosa Parks ainsi qu’Anne Frank par exemple.</p>
                 <figure>
-                    <img src="assets/img/livre/montage.webp" alt="Marie Curie, Coco Chanel et Michelle Obama, des femmes qui ont changé le monde">
+                    <img src="public/img/article/livre/montage.webp" alt="Marie Curie, Coco Chanel et Michelle Obama, des femmes qui ont changé le monde">
                     <figcaption>Marie Curie, Coco Chanel et Michelle Obama, des femmes qui ont changé le monde</figcaption>
                 </figure>
                 <p>Certaines encore inspire beaucoup de personnes avec leur générosité et leurs actes humanitaire, Clara Barton, qui sauva beaucoup d’homme de la guerre, Michelle Obama et son investissement pour les femmes et les noirs ou encore Diana Spencer et ses multiples actions humanitaires.</p>
@@ -121,7 +167,7 @@
             </div>
 
             <section>
-                <a href="#top"><img class="bouton_haut_de_page-article" src="assets/icones/FlecheHaut.svg" alt="Bouton retour en haut de page"></a>
+                <a href="#top"><img class="bouton_haut_de_page-article" src="public/icones/Fleche.svg" alt="Bouton retour en haut de page"></a>
                 <h2 class="deco deco_article">Autres Articles</h2>
 
                 <div class="boutons__aligne--droite">
@@ -130,7 +176,7 @@
                         <a href="article_resistance_FR.html">
                             <span class="bouton__contenu">
                                 Les Femmes font de la Résistance
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -139,7 +185,7 @@
                         <a href="article_interview_FR.html">
                             <span class="bouton__contenu">
                                 Interview d'une future militaire
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -148,7 +194,7 @@
                         <a href="./#Galerie">
                             <span class="bouton__contenu">
                                 Galerie
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -166,19 +212,19 @@
                     </span>
                 </address>
             </header>
-    
+
             <div>
                 <ul class="listUnstyles footer__liste-reseaux">
-                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                    <li><a href="https://facebook.com" target="_blank"><img src="public/icones/Facebook.svg"
                                 alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                    <li><a href="https://twitter.com" target="_blank"><img src="public/icones/Twitter.svg"
                                 alt="Twitter"></a></li>
-                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                    <li><a href="https://instagram.com" target="_blank"><img src="public/icones/Instagram.svg"
                                 alt="Instagram"></a></li>
                 </ul>
             </div>
             <hr class="ligne_pointie">
-    
+
             <nav>
                 <h3>Menu</h3>
                 <ul class="listUnstyles footer__liste-menu">
@@ -189,16 +235,16 @@
                 </ul>
             </nav>
             <hr class="ligne_pointie">
-    
+
             <footer class="footer__footer">
-                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
-                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
-                    Montbéliard.
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank">
+                    <img src="public/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
                     <br>Tout droit réservé.
                 </p>
             </footer>
-    
+
         </footer>
+
     </body>
 </html>

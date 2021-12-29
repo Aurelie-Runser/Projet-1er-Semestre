@@ -1,10 +1,11 @@
-/* Permet de mettre le texte à côté de la felche */
+/* mise en place du texte à côté de la felche */
 .frise{
     display: flex;
     height: auto;
     padding: 20px;
     padding-left: 30px;
 }
+
 
 /* LA FLECHE */
 
@@ -31,8 +32,10 @@
     border-left : 25px solid transparent;
 }
 
+
 /* LE TEXTE */
 
+/**/
 .frise__texte{
     display: flex;
     align-items: center;
@@ -40,7 +43,7 @@
     
 }
 
-/* les dates */
+/* mise en forme des dates */
 .texte__date{
     font-family: var(--font-manuscrit);
     font-size: var(--size-date);

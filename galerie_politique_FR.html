@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Femmes Fortes/Galerie Politique & Pouvoir</title>
@@ -14,17 +14,15 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
-
-                <!--<a href="menu_FR.html"></a>-->
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                     @pointerdown="menuIsOpen = !menuIsOpen" 
                     :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
                 </button>
 
             </nav>
@@ -112,7 +110,7 @@
                         <a href="#elizabeth">
                             <span class="bouton__contenu">
                                 Elizabeth 1er 
-                                <img class="bouton__galerie-fleche" src="assets/icones/FlecheHaut.svg" alt="Fleche">
+                                <img class="bouton__galerie-fleche" src="public/icones/Fleche.svg" alt="Fleche">
                             </span>
                         </a>
                     </li>
@@ -120,7 +118,7 @@
                         <a href="#eleanor">
                             <span class="bouton__contenu">
                                 Eleanor Roosevelt
-                                <img class="bouton__galerie-fleche" src="assets/icones/FlecheHaut.svg" alt="Fleche">
+                                <img class="bouton__galerie-fleche" src="public/icones/Fleche.svg" alt="Fleche">
                             </span>
                         </a>
                     </li>
@@ -128,7 +126,7 @@
                         <a href="#sirimavo">
                             <span class="bouton__contenu">
                                 Sirimavo Bandaranaike
-                                <img class="bouton__galerie-fleche" src="assets/icones/FlecheHaut.svg" alt="Fleche">
+                                <img class="bouton__galerie-fleche" src="public/icones/Fleche.svg" alt="Fleche">
                             </span>
                         </a>
                     </li>
@@ -136,7 +134,7 @@
                         <a href="#madeleine">
                             <span class="bouton__contenu">
                                 Madeleine Albright
-                                <img class="bouton__galerie-fleche" src="assets/icones/FlecheHaut.svg" alt="Fleche">
+                                <img class="bouton__galerie-fleche" src="public/icones/Fleche.svg" alt="Fleche">
                             </span>
                         </a>
                     </li>
@@ -144,7 +142,7 @@
                         <a href="#benazir">
                             <span class="bouton__contenu">
                                 Benazir Bhutto
-                                <img class="bouton__galerie-fleche" src="assets/icones/FlecheHaut.svg" alt="Fleche">
+                                <img class="bouton__galerie-fleche" src="public/icones/Fleche.svg" alt="Fleche">
                             </span>
                         </a>
                     </li>
@@ -161,7 +159,7 @@
                         <br>Métier : <span class="portrait__texte__gras">Femme d’état</span>
                         <br>Principalement connue pour : <span class="portrait__texte__gras">être la Reine d’Angleterre</span>
                     </p>
-                    <img class="portrait__img" src="assets/img/politique/Elizabeth_1er.webp" alt="Peinture d'Elizabeth 1er">
+                    <img class="portrait__img" src="public/img/galerie/politique/Elizabeth_1er.webp" alt="Peinture d'Elizabeth 1er">
                 </div>
 
                 <div>
@@ -181,7 +179,7 @@
                         <br>Métier : <span class="portrait__texte__gras">Humanitaire et Politique</span>
                         <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère Première Dame des Etats-Unis à réellement s’investir dans son poste</span>
                     </p>
-                    <img class="portrait__img" src="assets/img/politique/Eleanor_Roosevelt.webp" alt="Photo d'Eleanor Roosevelt">
+                    <img class="portrait__img" src="public/img/galerie/politique/Eleanor_Roosevelt.webp" alt="Photo d'Eleanor Roosevelt">
                 </div>
 
                 <div>
@@ -203,7 +201,7 @@
                         <br>Métier : <span class="portrait__texte__gras">Politicienne</span>
                         <br>Principalement connue pour : <span class="portrait__texte__gras">être 1ère femme de l’Histoire démocratique élu à la tête d’un gouvernement</span>
                     </p>
-                    <img class="portrait__img" src="assets/img/politique/Sirimavo_Bandaranaike.webp" alt="Photo de Sirimavo Bandaranaike">
+                    <img class="portrait__img" src="public/img/galerie/politique/Sirimavo_Bandaranaike.webp" alt="Photo de Sirimavo Bandaranaike">
                 </div>
 
                 <div>
@@ -225,7 +223,7 @@
                         <br>Métier : <span class="portrait__texte__gras">Politicienne</span>
                         <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme secrétaire d’état aux Etats-Unis</span>
                     </p>
-                    <img class="portrait__img" src="assets/img/politique/Madeleine_Albright.webp" alt="Photo de Madeleine Albright">
+                    <img class="portrait__img" src="public/img/galerie/politique/Madeleine_Albright.webp" alt="Photo de Madeleine Albright">
                 </div>
 
                 <div>
@@ -246,7 +244,7 @@
                         <br>Métier : <span class="portrait__texte__gras">Politique</span>
                         <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme Premier Ministre du Pakistan</span>
                     </p>
-                    <img class="portrait__img" src="assets/img/politique/Benazir_Bhutto.webp" alt="Photo de Benazir Bhutto">
+                    <img class="portrait__img" src="public/img/galerie/politique/Benazir_Bhutto.webp" alt="Photo de Benazir Bhutto">
                 </div>
 
                 <div>
@@ -270,7 +268,7 @@
                         <a href="galerie_science_FR.htmll">
                             <span class="bouton__contenu">
                                 Science & Technologie
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -279,7 +277,7 @@
                         <a href="galerie_activiste_FR.html">
                             <span class="bouton__contenu">
                                 Activistes & Révolutionnaires
-                                <img class="tweet__bouton__img" src="assets/icones/FlecheHaut.svg" alt="fleche">
+                                <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
@@ -299,19 +297,19 @@
                     </span>
                 </address>
             </header>
-    
+
             <div>
                 <ul class="listUnstyles footer__liste-reseaux">
-                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg"
+                    <li><a href="https://facebook.com" target="_blank"><img src="public/icones/Facebook.svg"
                                 alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg"
+                    <li><a href="https://twitter.com" target="_blank"><img src="public/icones/Twitter.svg"
                                 alt="Twitter"></a></li>
-                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg"
+                    <li><a href="https://instagram.com" target="_blank"><img src="public/icones/Instagram.svg"
                                 alt="Instagram"></a></li>
                 </ul>
             </div>
             <hr class="ligne_pointie">
-    
+
             <nav>
                 <h3>Menu</h3>
                 <ul class="listUnstyles footer__liste-menu">
@@ -322,16 +320,15 @@
                 </ul>
             </nav>
             <hr class="ligne_pointie">
-    
+
             <footer class="footer__footer">
-                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img
-                        src="assets/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
-                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de
-                    Montbéliard.
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank">
+                    <img src="public/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
+                <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
                     <br>Tout droit réservé.
                 </p>
             </footer>
-    
+
         </footer>
     </body>
 </html>

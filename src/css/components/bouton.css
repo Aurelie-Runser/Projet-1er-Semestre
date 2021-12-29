@@ -1,0 +1,146 @@
+/* suppression des décorations mient automatiquement sur les bouttons */
+button,
+.bouton__envoyer {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+/*-----------------------------------------------------------------*/
+/* MISE EN FORME DE LA FLECHE */
+
+/* tourné la fleche pour qu'elle pointe vers la droite */
+.tweet__bouton__img,
+.tweet__galerie__bouton,
+.tweet__autre__bouton,
+.bouton__galerie-fleche{
+    transform: rotate(90deg);
+    margin: 10px;
+    margin-right: 1px;
+}
+
+/* tourné la fleche pour qu'elle pointe vers le bas */
+.bouton__galerie-fleche{
+    transform: rotate(180deg);
+}
+
+/* bouton sur les pages article qui permet de retournern en haut de la page */
+.bouton_haut_de_page-article{
+    float: right;
+    margin: 20px 40px;
+}
+
+/*------------------------------------------------------------------*/
+
+/* texte du bouton + placement alignement du contenu */
+.tweet__bouton,
+.bouton__contenu{
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-bouton);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+/* mise en forme de l'image et du texte du bouton */
+.bouton__contenu{
+    background-color: var(--color-fond-noir);
+    height: 50px;
+    width: max-content;
+}
+
+
+/* ALIGNEMENTS DES BOUTONS */
+
+/* alignement horizontal des boutons */
+.boutons__aligne--horizontal{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* alignement à droite des boutons en fin des pages "articles" et "galerie" */
+.boutons__aligne--droite{
+    display: grid;
+    width: 100%;
+    padding-right: 20px;
+}
+/* marges des boutons des pages "articles" et "galerie" */
+.boutons_pages{
+    justify-self: right;
+    margin: 0 0 20px 0;
+}
+
+/* marge special pour le bouton "galerie" en fin de l'article du livre */
+.boutons_pages-galerie{
+    justify-self: right;
+    margin: 30px 0 0 0;
+}
+
+/* alignement vertical et au centre des bboutons des femmes dans la galerie */
+.bouton__galerie{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+
+/* BOUTONS "AUTRES PROJETS" */
+
+/* mise en place et forme des boutons */
+.bouton__projet{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    margin: 25px;
+    border-radius: 10px;
+    font-family: var(--font-machine);
+    font-size: var(--size-article-sous-titre);
+    text-align: center;
+}
+
+/* partie haute du bouton (titre et sous-titre du projet) */
+.projet__start{
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    color: var(--color-texte-blanc);
+    background-color: var(--color-bouton);
+}
+
+/* partie basse du bouton (nom) */
+.projet__end{
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+    color: var(--color-texte-noir);
+    background-color: var(--color-fond-blanc);
+}
+
+/* taille du titre du projet */
+.projet__titre{
+    font-size: var(--size-article-intertitre);
+}
+
+
+/* BOUTON D'ENVOIE DU FORMULAIRE */
+
+.bouton__envoyer{
+    height: auto;
+    width: auto;
+    justify-self: right;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--color-fond-blanc);
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-bouton);
+    color: var(--color-texte-noir);
+}

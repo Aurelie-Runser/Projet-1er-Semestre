@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <title>&Agrave Propos</title>
     </head>
@@ -15,8 +15,8 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="assets/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
                 <!--<a href="menu_FR.html"></a>-->
@@ -25,7 +25,7 @@
                     @pointerdown="menuIsOpen = !menuIsOpen" 
                     :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="assets/icones/MenuFerme.svg" alt="Menu">
+                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
                 </button>
 
             </nav>
@@ -38,21 +38,69 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
-                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="./">
+                            Accueil
+                        </a>
+                    </li>
                     <li class="deco">Articles</li>
-                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_resistance_FR.html">
+                            Les Femmes fond de la Résistance
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_interview_FR.html">
+                            Interview d'une future militaire
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_livre_FR.html">
+                            60 Femmes qui ont changé le monde
+                        </a>
+                    </li>
                     <li class="deco">Galerie</li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_science_FR.html">
+                            Science & Technologie
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_activiste_FR.html">
+                            Activistes & Révolutionnaires
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_politique_FR.html">
+                            Femmes de Pouvoir & Politique
+                        </a>
+                    </li>
                     <li class="espace"></li>
-                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="frise_FR.html">
+                            Frise chronologique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="lexique_FR.html">
+                            Lexique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="a_propos_FR.html">
+                            &Agrave Propos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="contact_FR.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="autres_projets_FR.html">
+                            Autres Projets
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -61,7 +109,7 @@
         <main>
             <section>
                 <h2>Qui suis-je ?</h2>
-                <img class="img__avatar" src="assets/img/a_propos/Avatar.webp" alt="Avatar d'Aurélie Runser, la créatrice du site">
+                <img class="img__avatar" src="public/img/a_propos/Avatar.webp" alt="Avatar d'Aurélie Runser, la créatrice du site">
                 <p>Je m’appelle Runser Aurélie, élève en 1ère année en BUT MMI à Montbéliard. Mon intérêt pour l’informatique et le web à commencer en 2nd, donc assez tard.
                     En cours d’ICN, Informatique et Création Numérique. Nous avons appris à coder en HTML et CSS. C’est durant cette année que j’ai créé mon premier site internet. Cela m’avait beaucoup plus. J’ai continué l’informatique en choisissant Numérique et Science Informatique en 1ère et Terminal, et ma passion pour le codage n’a pas baissé. Le BUT MMI c’est donc imposé à moi, étant fan de codage de site web.
                 </p>
@@ -70,7 +118,7 @@
             <section>
                 <h2>Le pourquoi de ce site</h2>
                 <figure>
-                    <img src="assets/img/a_propos/batiment_MMI.webp" alt="Photo du batiment MMI de Montbléiard">
+                    <img src="public/img/a_propos/batiment_MMI.webp" alt="Photo du batiment MMI de Montbléiard">
                     <figcaption>Bâtiment du département MMI de l'IUT de Montbléiard</figcaption>
                 </figure>
                 <p>Ce site a été créer pour le 1er projet individuel de MMI, avec pour thème « Des Amazon à Balance Ton Porc : les visages du féminisme ». Le secteur militaire et la seconde guerre mondiale m’ont toujours intéressé sans que je ne trouve du temps à y consacré. J’ai donc joué d’une pierre deux coup ! et créa un site axé sur les femmes dans la Résistance. Ce projet m’a permis d’effectuer des recherches intéressantes, dont la majorité sont disponible dans 
@@ -79,14 +127,14 @@
                     </a>
                 </p>
                 <figure>
-                    <img class="img__a_propos" src="assets/img/a_propos/Logo_MMI.webp" alt="Logo MMI de Montbéliard">
+                    <img class="img__a_propos" src="public/img/a_propos/Logo_MMI.webp" alt="Logo MMI de Montbéliard">
                 </figure>
                 <p>Bien que ce site comporte 2 articles importants en lien avec la guerre, les militaires, des éléments sans lien avec ces thèmes peuvent être trouver, afin de ne pas être centré seulement sur un sujet. Des portraits de femmes de différents horizons sont répertoriés dans 
                     <a href="index.html#Galerie">la Galerie</a> disponible sur la page d’accueil afin d’étendre sa culture !</p>
             </section>
 
             <section>
-                <img class="img__enveloppe" src="assets/img/a_propos/Enveloppe.webp" alt="Dessin enveloppe">
+                <img class="img__enveloppe" src="public/img/a_propos/Enveloppe.webp" alt="Dessin enveloppe">
                 <h2>Contactez-moi !</h2>
                 <p>Si vous avez des questions
                     par rapport au site ou mes formations, n’hésitez pas à les poser sur 
@@ -102,21 +150,24 @@
             <header class="footer__header">
                 <p class="footer__header__texte">Aurélie Runser - C1</p>
                 <address class="footer__header__texte">
-                    <span class="footer__header__texte">Contact : 
+                    <span class="footer__header__texte">Contact :
                         <a href="mailto:femmesfortes@gmail.com">femmesfortes@gmail.com</a>
                     </span>
                 </address>
             </header>
-        
+
             <div>
                 <ul class="listUnstyles footer__liste-reseaux">
-                    <li><a href="https://facebook.com" target="_blank"><img src="assets/icones/Facebook.svg" alt="Facebook"></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><img src="assets/icones/Twitter.svg" alt="Twitter"></a></li>
-                    <li><a href="https://instagramcom" target="_blank"><img src="assets/icones/Instagram.svg" alt="Instagram"></a></li>
+                    <li><a href="https://facebook.com" target="_blank"><img src="public/icones/Facebook.svg"
+                                alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com" target="_blank"><img src="public/icones/Twitter.svg"
+                                alt="Twitter"></a></li>
+                    <li><a href="https://instagram.com" target="_blank"><img src="public/icones/Instagram.svg"
+                                alt="Instagram"></a></li>
                 </ul>
             </div>
             <hr class="ligne_pointie">
-        
+
             <nav>
                 <h3>Menu</h3>
                 <ul class="listUnstyles footer__liste-menu">
@@ -127,15 +178,16 @@
                 </ul>
             </nav>
             <hr class="ligne_pointie">
-        
+
             <footer class="footer__footer">
-                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank"><img src="assets/icones/LogoMMI.svg"
-                        alt="Logo MMI Montbéliard"></a>
+                <a class="footer__img" href="http://mmimontbeliard.com/" target="_blank">
+                    <img src="public/icones/LogoMMI.svg" alt="Logo MMI Montbéliard"></a>
                 <p class="footer__mention">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard.
-                <br>Tout droit réservé.
+                    <br>Tout droit réservé.
                 </p>
             </footer>
-        
+
         </footer>
+
     </body>
 </html>

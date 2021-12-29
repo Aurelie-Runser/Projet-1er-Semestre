@@ -1,5 +1,4 @@
 /* mise en forme des portraits et couleur */
-
 .portrait__claire{
     display: grid; 
     background-color: var(--color-fond-blanc);

@@ -1,7 +1,12 @@
+/* mise en place de l'header */
 .header{
     position: absolute;
     width: 100%;
 }
+
+/* LA PETITE BANNIERE */
+
+/* mise en place et forme de la banniere */
 .header__banniere{
     display: flex;
     z-index: 3;
@@ -15,6 +20,7 @@
     background-color: var(--color-fond-noir);
 }
 
+/* mise en place du logo et du bouton de langue */
 .header__start{
     display: flex;
     align-items: center;
@@ -22,11 +28,30 @@
     gap: 10px
 }
 
+/* mise en place du bouton du menu */
 .header__end{
     display: flex;
     align-items: center;
 }
 
+
+/* LA GRANDE BANIERRE */
+
+/* mise en forme du texte "femmes fortes" */
+.femmes_fortes{
+    color: var(--color-titre-violet);
+    font-size: var(--size-titre-femmes-fortes);
+    background-color: rgba(0,0,0,0.50);
+}
+
+/* mise en forme du titre de la page */
+.titre{
+    font-size: var(--size-titre-page);
+    background-color: rgba(0,0,0,0.50);
+}
+
+
+/* mise en forme du fond de la banniere sans image */
 .header__titre{
     width: 100%;
     height: 160px;
@@ -34,30 +59,19 @@
     padding-bottom: 10px;
 }
 
-.femmes_fortes{
-    color: var(--color-titre-violet);
-    font-size: var(--size-titre-femmes-fortes);
-    background-color: rgba(0,0,0,0.50);
-}
+/* Image de fond de chaque baniiere */
 
-.titre{
-    font-size: var(--size-titre-page);
-    background-color: rgba(0,0,0,0.50);
-}
-
-/* Image de fond de chaque header */
-
+/* mise en forme de la banniere avec image */
 .header__img{
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: grid;
     width: 100%;
     height: 160px;
-    display: grid;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .header__revolution{
     background-image: url("../../img/header/header_article_revolution.webp");
-    
 }
 
 .header__interview{

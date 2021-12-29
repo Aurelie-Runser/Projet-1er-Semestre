@@ -1,16 +1,18 @@
+/* mise en forme du footer */
 footer{
     background-color: var(--color-fond-noir);
     color: var(--color-texte-footer);
     padding: 5px 30px;
     margin-top: 50px;
-
 }
 
+/* marges de l'header */
 .footer__header{
     margin-top: 20px;
     padding: 0;
 }
 
+/* mise en forme du texte dans l'header */
 .footer__header__texte{
     padding: 0;
     margin: 0;
@@ -18,37 +20,44 @@ footer{
     margin-top: 5px;
 }
 
+/* mise en forme du malto */
 .footer__header__mail{
     color: var(--color-texte-footer);
     font-size: var(--size-bouton);
 }
 
+/* mise en place des icons reseaux sociaux */
 .footer__liste-reseaux{
     display: flex;
     justify-content: space-between;
     margin: 5%
 } 
 
+/* mise en forme du titre "menu" */
 .footer__liste-menu{
     font-size: var(--size-bouton);
     margin-bottom: 1.5rem;
 }
 
+/* marge des element de la liste */
 .footer__liste-item{
     margin: 0.7rem;
 }
 
+/* mise en forme du footer */
 .footer__footer{
     display: block;
     margin: -10px;
 }
 
+/* mise en place de l'icon MMI */
 .footer__img{
     float: right;
     margin-top: 30px;
     margin-left: 10px;
 }
 
+/* marge du texte des metions */
 .footer__mention{
     margin-left: -20px;
 }

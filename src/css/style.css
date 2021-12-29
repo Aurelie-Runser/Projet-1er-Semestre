@@ -9,7 +9,8 @@
 
 /* Compenents */
 @import url("components/menu.css");
-@import url("components/tweet_bouton.css");
+@import url("components/bouton.css");
+@import url("components/tweet.css");
 @import url("components/portaits.css");
 @import url("components/formulaire.css");
 
