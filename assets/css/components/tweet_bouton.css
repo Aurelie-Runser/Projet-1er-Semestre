@@ -135,7 +135,8 @@
 
 
 /* suppression des décorations mis automatiquement sur les bouttons */
-button {
+button,
+.bouton__envoyer {
     -webkit-appearance: none;
     appearance: none;
     border: none;
@@ -146,7 +147,8 @@ button {
 /* tourné la fleche pour qu'elle pointe vers la droite */
 .tweet__bouton__img,
 .tweet__galerie__bouton,
-.tweet__autre__bouton{
+.tweet__autre__bouton,
+.bouton__galerie-fleche{
     transform: rotate(90deg);
     margin: 10px;
     margin-right: 1px;
@@ -154,8 +156,6 @@ button {
 
 .bouton__galerie-fleche{
     transform: rotate(180deg);
-    margin: 10px;
-    margin-right: 1px;
 }
 
 /* Mise en forme de l'image et du texte du bouton */
@@ -230,6 +230,7 @@ button {
     text-align: center;
 }
 
+/* partie haute du bouton (titre et sous-titre du projet) */
 .projet__start{
     height: 50%;
     width: 100%;
@@ -238,6 +239,7 @@ button {
     background-color: var(--color-bouton);
 }
 
+/* partie basse du bouton (nom) */
 .projet__end{
     height: 50%;
     width: 100%;
@@ -248,4 +250,19 @@ button {
 
 .projet__titre{
     font-size: var(--size-article-intertitre);
+}
+
+/* BOUTON D'ENVOIE DU FORMULAIRE */
+
+.bouton__envoyer{
+    height: auto;
+    width: auto;
+    justify-self: right;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--color-fond-blanc);
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-bouton);
+    color: var(--color-texte-noir);
 }

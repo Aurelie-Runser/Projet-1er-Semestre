@@ -1,0 +1,57 @@
+.contacte__titre{
+    font-family: var(--font-texte);
+}
+
+.contact__majuscule{
+    text-transform: uppercase;
+}
+
+select,
+option,
+.champs{
+    margin: 0 20px ;
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border: solid var(--color-fond-blanc);
+    border-radius: 10px;
+    background: var(--color-b-input);
+    font-family: var(--font-texte);
+    color: var(--color-texte-blanc);
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("../../icones/FlecheBas.svg");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: center;
+}
+
+option{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: var(--color-fond-noir);
+}
+
+.marge_capcha{
+    margin: 30px;
+    width: 80%;
+}
+
+.popup_envoye{
+    position: fixed;
+    z-index: 1;
+    width: auto;
+    top: 50%;
+    left: 10%;
+    padding: 15px 20px;
+    border: 2px solid var(--color-bouton_envoye);
+    border-radius: 100px;
+    background-color: var(--color-fond-noir);
+    text-align: center;
+    color: var(--color-bouton_envoye);
+}

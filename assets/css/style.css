@@ -11,6 +11,7 @@
 @import url("components/menu.css");
 @import url("components/tweet_bouton.css");
 @import url("components/portaits.css");
+@import url("components/formulaire.css");
 
 /* Layout */
 @import url("layout/header.css");

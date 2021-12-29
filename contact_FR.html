@@ -19,8 +19,6 @@
                     <a class="header__langue" href="#"><img src="assets/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
-                <!--<a href="menu_FR.html"></a>-->
-
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
                     @pointerdown="menuIsOpen = !menuIsOpen" 
                     :class="menuIsOpen && 'menu-btn--open'">
@@ -60,33 +58,113 @@
     
         <main>
             <div>
-                <h3>Nom Prénom</h3>
-                <input type="text">
+                <h3 class="contacte__titre">
+                    Prénom
+                    <span class="contact__majuscule">
+                        Nom
+                    </span>
+                </h3>
+                            
+                <input class="champs"
+                    type="text" 
+                    id="name"
+                    required
+                    x-ref="champtnom"
+                    x-on:focusout="$refs.champtnom.style.backgroundColor = 'var(--color-b-input)';
+                                    $refs.champtnom.style.color = 'var(--color-texte-blanc)';"
+                    x-on:click="$refs.champtnom.style.backgroundColor = 'var(--color-fond-noir)';;">
+      
             </div>
 
             <div>
-                <h3>Votre adresse mail</h3>
-                <input type="text">
+                <h3 class="contacte__titre">Votre adresse mail</h3>
+
+                    <input class="champs"
+                            type="email" 
+                            id="email"
+                            pattern=".+@globex\.com"
+                            required
+                            x-ref="champmail"
+                            x-on:focusout="$refs.champmail.style.backgroundColor = 'var(--color-b-input)';
+							                $refs.champmail.style.color = 'var(--color-texte-blanc)';"
+                            x-on:click="$refs.champmail.style.backgroundColor = 'var(--color-fond-noir)';">
+                
             </div>
 
             <div>
-                <h3>Objet</h3>
-                <input type="text">
+                <h3 class="contacte__titre">Objet</h3>
+                
+                <label for="objet"></label>
+
+                <select  name="pets" id="objet">
+                    <img src="assets/icones/FlecheHaut.svg" alt="fleche">
+                    <option value="">Choisisez un sujet</option>
+                    <option value="historique">Historique</option>
+                    <option value="interview">Interview</option>
+                    <option value="livre">Livre</option>
+                    <option value="presision">Présision sur les femmes, dates...</option>
+                    <option value="formation">Formation</option>
+                    <option value="autre">Autre</option>
+                </select>
+
             </div>
 
             <div>
-                <h3>Votre requête</h3>
-                <input type="text">
+                <h3 class="contacte__titre">Votre requête</h3>
+                <textarea class="champs" 
+                            name="text" 
+                            cols="50" 
+                            rows="5"
+                            required
+                            x-ref="champmtext"
+                            x-on:focusout="$refs.champmtext.style.backgroundColor = 'var(--color-b-input)';
+							                $refs.champmtext.style.color = 'var(--color-texte-blanc)';"
+                            x-on:click="$refs.champmtext.style.backgroundColor = 'var(--color-fond-noir)';">
+                
+                </textarea>
             </div>
 
             <div>
-                <h3>Veuillez cocher la case ci-dessous pour continuer</h3>
-                <img src="assets/img/Captcha.png" alt="Captcha">
-                <button>
-                    Envoyer
-                    <img src="assets/icones/FlecheHaut.svg" alt="Flèche">
-                </button>
+                <h3 class="contacte__titre">Veuillez cocher la case ci-dessous pour continuer</h3>
+
+                <div class="marge_capcha" x-data="{open_no : true, open_yes: false}">
+
+                    <img id='captcha_fr_yes'
+                    src="assets/img/capcha/CaptchaFrYes.png"
+                    alt="Captcha2"
+                    x-show="open_yes"
+                    x-ref="captcha_fr_yes"/>
+
+                    <img id='captcha_fr_no'
+                    src="assets/img/capcha/CaptchaFrNo.png"
+                    alt="Captcha1"
+                    x-show="open_no"
+                    x-ref="captcha_fr_no"
+                    x-on:click="open_no = false;
+                                open_yes = true"/>
+
+                </div>
+
+                <div class="boutons__aligne--droite" x-data="{open_popup : false}">
+
+                    <span class="popup_envoye"
+                            id='popup'
+                            x-show=open_popup
+                            x-ref="popup">
+                        Votre message a bien été envoyé
+                    </span>
+
+                    <input class="bouton__envoyer" 
+                            type="submit" 
+                            value="Envoyer" 
+                            x-ref="bouton_envoyer" 
+                            x-on:click="open_popup = true">
+                            
+                </div>
+
             </div>
+
+            <p class="ps">(Ce formulaire n'est pas fonctionnel. Il simule un formulaire mais n'envoie aucun mail à aucune adresse)</p>
             
         </main>
         

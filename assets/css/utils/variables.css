@@ -13,6 +13,8 @@
 --color-lexique-fonce: rgba(124, 19, 204, 1);
 --color-citation-claire: rgba(255, 255, 243, 0.75);
 --color-citation-fonce: rgba(0, 0, 0, 0.75);
+--color-b-input: rgba(255, 255, 243, 0.5);
+--color-bouton_envoye: rgba(209, 255, 162, 1);
 
 /* Text-size styles */
 /* base size: texte (16px) */
