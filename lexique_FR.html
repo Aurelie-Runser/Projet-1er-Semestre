@@ -19,12 +19,14 @@
                     <a class="header__langue" href="#"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
-                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
-                    @pointerdown="menuIsOpen = !menuIsOpen" 
-                    :class="menuIsOpen && 'menu-btn--open'">
+                <div class="header__end">
+                    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                        @pointerdown="menuIsOpen = !menuIsOpen" 
+                        :class="menuIsOpen && 'menu-btn--open'">
 
-                    <img class="header__end" src="public/icones/MenuFerme.svg" alt="Menu">
-                </button>
+                        <img class="header__menu" src="public/icones/MenuFerme.svg" alt="Menu">
+                    </button>
+                </div>
 
             </nav>
 
@@ -36,21 +38,69 @@
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list listUnstyles">
-                    <li class="menu__item"><a class="menu__lien" href="./">Accueil</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="./">
+                            Accueil
+                        </a>
+                    </li>
                     <li class="deco">Articles</li>
-                    <li class="menu__item"><a class="menu__lien" href="article_resistance_FR.html">Les Femmes fond de la Résistance</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_interview_FR.html">Interview d'une future militaire</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="article_livre_FR.html">60 Femmes qui ont changé le monde</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_resistance_FR.html">
+                            Les Femmes fond de la Résistance
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_interview_FR.html">
+                            Interview d'une future militaire
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="article_livre_FR.html">
+                            60 Femmes qui ont changé le monde
+                        </a>
+                    </li>
                     <li class="deco">Galerie</li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_science_FR.html">Science & Technologie</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_activiste_FR.html">Activistes & Révolutionnaires</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="galerie_politique_FR.html">Femmes de Pouvoir & Politique</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_science_FR.html">
+                            Science & Technologie
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_activiste_FR.html">
+                            Activistes & Révolutionnaires
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="galerie_politique_FR.html">
+                            Femmes de Pouvoir & Politique
+                        </a>
+                    </li>
                     <li class="espace"></li>
-                    <li class="menu__item"><a class="menu__lien" href="frise_FR.html">Frise chronologique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="lexique_FR.html">Lexique</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="a_propos_FR.html">&Agrave Propos</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="contact_FR.html">Contact</a></li>
-                    <li class="menu__item"><a class="menu__lien" href="autres_projets_FR.html">Autres Projets</a></li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="frise_FR.html">
+                            Frise chronologique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="lexique_FR.html">
+                            Lexique
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="a_propos_FR.html">
+                            &Agrave Propos
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="contact_FR.html">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__lien" href="autres_projets_FR.html">
+                            Autres Projets
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -58,95 +108,107 @@
 
         <main>
             <dl>
-                <h2 id="c">C</h2>
-                    <dt >Champion de la Terre</dt>
-                    <dd>programme des Nations unies pour l'environnement créé en 2005 pour récompenser les personnes initiatrices d’impact environnemental positif. (Wikipédia)</dd>
+                <span class="lexique__ancre" id="c"></span>
+                <h2 class="lexique__lettre">C</h2>
+                    <dt class="lexique__mot">Champion de la Terre</dt>
+                    <dd class="lexique__def">programme des Nations unies pour l'environnement créé en 2005 pour récompenser les personnes initiatrices d’impact environnemental positif. (Wikipédia)</dd>
 
-                    <dt>Charles Babbage</dt>
-                    <dd>mathématicien et inventeur visionnaire britannique du XIXᵉ siècle, l'un des principaux précurseurs de l'informatique. Il fut le premier à énoncer le principe d'un ordinateur. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Charles Babbage</dt>
+                    <dd class="lexique__def">mathématicien et inventeur visionnaire britannique du XIXᵉ siècle, l'un des principaux précurseurs de l'informatique. Il fut le premier à énoncer le principe d'un ordinateur. (Wikipédia)</dd>
 
-                    <dt>Croix Rouge</dt>
-                    <dd>organisation internationale à vocation humanitaire, fondée pour venir en aide aux victimes de la guerre. (Larousse)</dd>
+                    <dt class="lexique__mot">Croix Rouge</dt>
+                    <dd class="lexique__def">organisation internationale à vocation humanitaire, fondée pour venir en aide aux victimes de la guerre. (Larousse)</dd>
 
-                <h2 id="d">D</h2>
+                <span class="lexique__ancre" id="d"></span>
+                <h2 class="lexique__lettre">D</h2>
 
-                    <dt>Dispensaire</dt>
-                    <dd> (nom masculin) établissement où l'on donne gratuitement des consultations, des soins médicaux. (Le Robert)</dd>
+                    <dt class="lexique__mot">Dispensaire</dt>
+                    <dd class="lexique__def"> (nom masculin) établissement où l'on donne gratuitement des consultations, des soins médicaux. (Le Robert)</dd>
 
-                <h2 id="f">F</h2>
+                <span class="lexique__ancre" id="f"></span>
+                <h2 class="lexique__lettre">F</h2>
 
-                    <dt>Force Française Libre (FFL)</dt>
-                    <dd> forces armées de la France rallié au général de Gaulle durant la Seconde Guerre Mondiale.</dd>
+                    <dt class="lexique__mot">Force Française Libre (FFL)</dt>
+                    <dd class="lexique__def"> forces armées de la France rallié au général de Gaulle durant la Seconde Guerre Mondiale.</dd>
 
-                    <dt>Fusilieur-Voltigeur</dt>
-                    <dd>tireur avec un fusil placer en 1ère ligne afin de déranger l’ennemie.</dd>
+                    <dt class="lexique__mot">Fusilieur-Voltigeur</dt>
+                    <dd class="lexique__def">tireur avec un fusil placer en 1ère ligne afin de déranger l’ennemie.</dd>
 
-                <h2 id="g">G</h2>
+                <span class="lexique__ancre" id="g"></span>
+                <h2 class="lexique__lettre">G</h2>
 
-                    <dt>Guerre de Sécession</dt>
-                    <dd>guerre civile américaine survenue entre 1861 et 1865. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Guerre de Sécession</dt>
+                    <dd class="lexique__def">guerre civile américaine survenue entre 1861 et 1865. (Wikipédia)</dd>
 
-                    <dt>Guerre franco-allemande </dt>
-                    <dd>guerre opposant la France et la coalition d'États allemands de 1870 à 1871. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Guerre franco-allemande </dt>
+                    <dd class="lexique__def">guerre opposant la France et la coalition d'États allemands de 1870 à 1871. (Wikipédia)</dd>
 
-                    <dt>Guerre Anglo-Hollandaise</dt>
-                    <dd>série de quatre guerres au XVIIe siècle et au XVIIIe siècle entre l'Angleterre puis le Royaume de Grande-Bretagne et les 7 provinces des Pays-Bas espagnole. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Guerre Anglo-Hollandaise</dt>
+                    <dd class="lexique__def">série de quatre guerres au XVIIe siècle et au XVIIIe siècle entre l'Angleterre puis le Royaume de Grande-Bretagne et les 7 provinces des Pays-Bas espagnole. (Wikipédia)</dd>
 
-                <h2 id="h">H</h2>
+                <span class="lexique__ancre" id="h"></span>
+                <h2 class="lexique__lettre">H</h2>
 
-                    <dt>Hobart and William Smith College</dt>
-                    <dd>2 collèges privés d'arts libéraux, un pour les filles et l’autre pour les garçons, se situant à Genève, New York, créés en 1797. Les collèges offrent les diplômes de Bachelor of Arts, Bachelor of Science et Master of Arts en enseignement. Pour plus d’information : 
+                    <dt class="lexique__mot">Hobart and William Smith College</dt>
+                    <dd class="lexique__def">2 collèges privés d'arts libéraux, un pour les filles et l’autre pour les garçons, se situant à Genève, New York, créés en 1797. Les collèges offrent les diplômes de Bachelor of Arts, Bachelor of Science et Master of Arts en enseignement. Pour plus d’information : 
                         <a href="https://gaz.wiki/wiki/fr/Hobart_and_William_Smith_Colleges" target="_blank">
                             https://gaz.wiki/wiki/fr/Hobart_and_William_Smith_Colleges
                         </a>
                     </dd>
 
-                <h2 id="l">L</h2>
+                <span class="lexique__ancre" id="l"></span>
+                <h2 class="lexique__lettre">L</h2>
 
-                    <dt>Loi Martiale</dt>
-                    <dd> état juridique d'exception, au sein duquel l'armée assure le maintien de l'ordre à la place de la police ou en collaboration avec celle-ci. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Loi Martiale</dt>
+                    <dd class="lexique__def"> état juridique d'exception, au sein duquel l'armée assure le maintien de l'ordre à la place de la police ou en collaboration avec celle-ci. (Wikipédia)</dd>
 
-                <h2 id="m">M</h2>
+                <span class="lexique__ancre" id="m"></span>
+                <h2 class="lexique__lettre">M</h2>
 
-                    <dt>Machine Analytique</dt>
-                    <dd>machine à calculer programmable imaginée en 1834 par le mathématicien anglais Charles Babbage. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Machine Analytique</dt>
+                    <dd class="lexique__def">machine à calculer programmable imaginée en 1834 par le mathématicien anglais Charles Babbage. (Wikipédia)</dd>
 
-                    <dt>Maquis</dt>
-                    <dd>(nom masculin) : dans la Résistance, les maquis désignent les résistants se cachant dans les milieux peu fréquentés comme les forêts et les montagnes</dd>
+                    <dt class="lexique__mot">Maquis</dt>
+                    <dd class="lexique__def">(nom masculin) : dans la Résistance, les maquis désignent les résistants se cachant dans les milieux peu fréquentés comme les forêts et les montagnes</dd>
 
-                <h2 id="r">R</h2>
+                <span class="lexique__ancre" id="r"></span>
+                <h2 class="lexique__lettre">R</h2>
 
-                    <dt>Réformiste</dt>
-                    <dd>(non masculin) doctrines politiques visant à améliorer les structures existantes, économiques et sociales, par des modifications progressives des lois plutôt que par une révolution. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Réformiste</dt>
+                    <dd class="lexique__def">(non masculin) doctrines politiques visant à améliorer les structures existantes, économiques et sociales, par des modifications progressives des lois plutôt que par une révolution. (Wikipédia)</dd>
 
-                    <dt>Réseau de l’Underground Railroad</dt>
-                    <dd>réseau de routes clandestines, d'itinéraires et de refuges sûrs utilisé par les esclaves afro-américains fuyant vers la liberté. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Réseau de l’Underground Railroad</dt>
+                    <dd class="lexique__def">réseau de routes clandestines, d'itinéraires et de refuges sûrs utilisé par les esclaves afro-américains fuyant vers la liberté. (Wikipédia)</dd>
 
-                    <dt>Réserviste</dt>
-                    <dd>soldat qui vient renforcer les rangs volontairement.</dd>
+                    <dt class="lexique__mot">Réserviste</dt>
+                    <dd class="lexique__def">soldat qui vient renforcer les rangs volontairement.</dd>
 
-                <h2 id="s">S</h2>
+                <span class="lexique__ancre" id="s"></span>
+                <h2 class="lexique__lettre">S</h2>
 
-                    <dt>Salaire féminin</dt>
-                    <dd> loi française indiquant le salaire des femmes, inférieur à celui des hommes.</dd>
+                    <dt class="lexique__mot">Salaire féminin</dt>
+                    <dd class="lexique__def"> loi française indiquant le salaire des femmes, inférieur à celui des hommes.</dd>
 
-                    <dt>Suffragette</dt>
-                    <dd>(nom féminin) femme qui, d'abord en Grande-Bretagne, militait pour le droit de vote féminin. (Le Robert)</dd>
+                    <dt class="lexique__mot">Suffragette</dt>
+                    <dd class="lexique__def">(nom féminin) femme qui, d'abord en Grande-Bretagne, militait pour le droit de vote féminin. (Le Robert)</dd>
 
-                <h2 id="t">T</h2>
+                <span class="lexique__ancre" id="t"></span>
+                <h2 class="lexique__lettre">T</h2>
 
-                    <dt>Tamoul</dt>
-                    <dd>(adjectif et nom) peuple du sud-est de l'Inde</dd>
+                    <dt class="lexique__mot">Tamoul</dt>
+                    <dd class="lexique__def">(adjectif et nom) peuple du sud-est de l'Inde</dd>
 
-                <h2 id="v">V</h2>
+                <span class="lexique__ancre" id="v"></span>
+                <h2 class="lexique__lettre">V</h2>
 
-                    <dt>Votes for Women </dt>
-                    <dd>journal associé au mouvement en faveur du droit de vote des femmes au Royaume-Uni qui paraît de 1907 à 1918. Il est le journal officiel de la Women's Social and Political Union jusqu'en 1912. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Votes for Women</dt>
+                    <dd class="lexique__def">journal associé au mouvement en faveur du droit de vote des femmes au Royaume-Uni qui paraît de 1907 à 1918. Il est le journal officiel de la Women's Social and Political Union jusqu'en 1912. (Wikipédia)</dd>
             
-                <h2 id="w">W</h2>
+                <span class="lexique__ancre" id="w"></span>
+                <h2 class="lexique__lettre">W</h2>
 
-                    <dt>Women’s Social and Political Union (ou WSPU)</dt>
-                    <dd>organisation féministe créée en 1903 et dissoute en 1917 où les suffragettes militaient en faveurs du droit de vote des femmes aux Royaume-Unis. (Wikipédia)</dd>
+                    <dt class="lexique__mot">Women’s Social and Political Union (ou WSPU)</dt>
+                    <dd class="lexique__def">organisation féministe créée en 1903 et dissoute en 1917 où les suffragettes militaient en faveurs du droit de vote des femmes aux Royaume-Unis. (Wikipédia)</dd>
 
             </dl>
 
@@ -194,5 +256,6 @@
             </footer>
 
         </footer>
+
     </body>
 </html>
