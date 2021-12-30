@@ -1,7 +1,8 @@
 /* mise en place du texte à côté de la felche */
 .frise{
     display: flex;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 20px;
     padding-left: 30px;
 }
@@ -16,42 +17,53 @@
     width: 100%;
     margin: 5px 5px 0 0;
     align-items: center;
+    justify-items: flex-start;
 }
 
 /* le trait de la fleche */
 .fleche__ligne{
-    width: 30px;
+    display: flex;
+    width: 31px;
     height: 100%;
+    overflow: hidden;
     background-color: var(--color-fond-blanc);
 }
 
 /* la pointe de la fleche */
-.fleche__triangle{
+.fleche__pointe{
     border-top : 43px solid var(--color-fond-blanc);
     border-right : 25px solid transparent;
     border-left : 25px solid transparent;
 }
 
+/* mise en place des triangles */
+.fleche__triangle{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* mise en forme des triangles */
+.triangle{
+    border-top : 26px solid var(--color-fond-rouge);
+    border-right : 15px solid transparent;
+    border-left : 16px solid transparent;
+    background-color: var(--color-fond-blanc);
+}
+
 
 /* LE TEXTE */
 
-/**/
+/* mise en place du texte */
 .frise__texte{
     display: flex;
     align-items: center;
-    z-index: 1;
-    
 }
 
 /* mise en forme des dates */
 .texte__date{
     font-family: var(--font-manuscrit);
     font-size: var(--size-date);
-}
-
-.texte__fleche{
-    left: 10%;
-    border-top : 26px solid var(--color-fond-blanc);
-    border-right : 16px solid transparent;
-    border-left : 16px solid transparent;
 }
