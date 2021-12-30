@@ -66,7 +66,8 @@ a{
 /* mise en forme des liens internes et externes */
 .lien,
 .claire,
-.fonce{
+.fonce,
+.externe{
     font-style: italic;
     text-decoration: underline;
 }
@@ -79,6 +80,11 @@ a{
 /* met le lien en fonce pour etre mieux vue sur un fond claire */
 .fonce{
     color: var(--color-lexique-fonce);
+}
+
+.externe{
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* mise en page globale des citations */
