@@ -14,8 +14,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 10%;
-    padding: 10px 20px 0px 10px;
+    height: 10vh;
+    padding: 2vh 5vw 2vh 3vw;
     align-content: flex-start;
     justify-content: space-between;
     background-color: var(--color-fond-noir);
@@ -26,16 +26,26 @@
     display: flex;
     height: 100%;
     align-items: center;
-    height: 100%;
-    gap: 10px
+    gap: 3vw;
+    margin-top: 1vh;
+}
+
+/* mise a l'echelle du logo */
+.header__logo{
+    width: 40%;
+}
+
+/* mise a l'echelle du bouton des langue */
+.header__langue{
+    width: 40%;
 }
 
 /* mise en place du bouton du menu */
 .header__end{
     display: flex;
+    width: 15vw;
     height: 100%;
-    align-items: center;
-    height: 100%;
+    justify-items: center;
 }
 
 
@@ -96,4 +106,11 @@
 
 .header__politique{
     background-image: url("../../../public/img/header/header_galerie_politique.webp");
+}
+
+/* element non visible, sert à ce que le menu descende sous la banniere */
+.cache{
+    display: block;
+    height: 10vh;
+    background-color: var(--color-fond-noir);
 }

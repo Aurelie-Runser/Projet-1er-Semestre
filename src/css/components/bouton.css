@@ -17,7 +17,7 @@ button,
 .tweet__autre__bouton,
 .bouton__galerie-fleche{
     transform: rotate(90deg);
-    margin: 10px;
+    margin: 5px;
     margin-right: 1px;
 }
 
@@ -29,7 +29,7 @@ button,
 /* bouton sur les pages article qui permet de retournern en haut de la page */
 .bouton_haut_de_page-article{
     float: right;
-    margin: 20px 40px;
+    margin: 3vh 15vw;
 }
 
 /*------------------------------------------------------------------*/
@@ -59,34 +59,35 @@ button,
 .boutons__aligne--horizontal{
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 5vh;
     padding-left: 2%;
     padding-right: 2%;
 }
 
 /* alignement à droite des boutons en fin des pages "articles" et "galerie" */
 .boutons__aligne--droite{
-    display: grid;
+    display: flex;
     width: 100%;
-    padding-right: 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 6vw;
 }
-/* marges des boutons des pages "articles" et "galerie" */
+/* marges des boutons des pages "articles" et "galerie"  */
 .boutons_pages{
-    justify-self: right;
-    margin: 0 0 20px 0;
+    margin-bottom: 2vh;
 }
 
 /* marge special pour le bouton "galerie" en fin de l'article du livre */
 .boutons_pages-galerie{
     justify-self: right;
-    margin: 30px 0 0 0;
+    margin-top: 3vh;
 }
 
 /* alignement vertical et au centre des bboutons des femmes dans la galerie */
 .bouton__galerie{
     display: flex;
     justify-content: center;
-    margin: 15px;
+    margin: 3vh;
 }
 
 
@@ -100,7 +101,7 @@ button,
     width: auto;
     height: auto;
     margin: 25px;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: var(--font-machine);
     font-size: var(--size-article-sous-titre);
     text-align: center;

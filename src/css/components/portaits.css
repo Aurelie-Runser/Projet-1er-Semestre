@@ -29,13 +29,12 @@
 .portrait__img{
     width: auto;
     height: 250px;
-    margin-right: 10px;
-    right: 0px;
+    margin-right: 3vw;
 }
 
 /* marge du texte avec les infos rapides */
 .portrait__header__texte{
-    margin: 0 5px 0 20px;
+    margin: 0 2vw 0 5vw;
 }
 
 /* mise en gras des infos */
@@ -45,7 +44,7 @@
 
 /* marge sur le texte */
 .portrait__body__texte{
-    margin: 20px;
+    margin: 5vw;
 }
 
 /* mise en valeur de la 1ere lettre du texte */

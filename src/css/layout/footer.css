@@ -2,13 +2,13 @@
 footer{
     background-color: var(--color-fond-noir);
     color: var(--color-texte-footer);
-    padding: 5px 30px;
-    margin-top: 50px;
+    padding: 1vh 7vw;
+    margin-top: 8vh;
 }
 
 /* marges de l'header */
 .footer__header{
-    margin-top: 20px;
+    margin-top: 3vh;
     padding: 0;
 }
 
@@ -30,7 +30,7 @@ footer{
 .footer__liste-reseaux{
     display: flex;
     justify-content: space-between;
-    margin: 5%
+    margin: 3vh;
 } 
 
 /* mise en forme du titre "menu" */
@@ -47,17 +47,18 @@ footer{
 /* mise en forme du footer */
 .footer__footer{
     display: block;
-    margin: -10px;
+    margin: -2vw ;
+    margin-top: -4vh;
 }
 
 /* mise en place de l'icon MMI */
 .footer__img{
     float: right;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 5vh;
+    margin-left: 3vw;
 }
 
 /* marge du texte des metions */
 .footer__mention{
-    margin-left: -20px;
+    margin-left: -4vw;
 }

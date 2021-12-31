@@ -28,8 +28,8 @@
 .menu__item{
     font-family: var(--font-manuscrit);
     font-size: var(--size-menu); 
-    padding-right: 10%;
-    margin-top: 10px;
+    padding-right: 10vw;
+    margin-top: 0.5vh;
 }
 
 /* mise en place du bouton burger */
@@ -43,9 +43,3 @@
     transform: rotate(-90deg);
 }
 
-/* element non visible, sert à ce que le menu descende sous la banniere */
-.cache{
-    display: block;
-    height: 82px;
-    background-color: var(--color-fond-noir);
-}

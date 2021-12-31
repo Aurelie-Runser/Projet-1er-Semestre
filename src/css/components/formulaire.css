@@ -12,10 +12,10 @@
 select,
 option,
 .champs{
-    margin: 0 20px ;
-    width: 80%;
+    margin: 0 5vw ;
+    width: 85vw;
     height: auto;
-    padding: 10px;
+    padding: 1vh;
     border: solid var(--color-fond-blanc);
     border-radius: 10px;
     background: var(--color-b-input);
@@ -45,13 +45,13 @@ option{
 
 /* marge pour le captcha */
 .marge_capcha{
-    margin: 30px;
+    margin: 8vw;
     width: 80%;
 }
 
 /* mise en forme du texte d'information à la fin du formulaire */
 .ps{
-    padding: 30px 20px 0 0;
+    padding: 5vh 5vw 0 0;
     text-align: right;
     font-size: var(--size-tweet-texte);
     color: var(--color-elements-graphique);
@@ -63,7 +63,7 @@ option{
     z-index: 1;
     width: auto;
     top: 50%;
-    left: 10%;
+    left: 10vw;
     padding: 15px 20px;
     border: 2px solid var(--color-bouton_envoye);
     border-radius: 100px;

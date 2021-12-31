@@ -14,8 +14,8 @@
     position: relative;
     width: 100%;
     height: 7rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     align-items: center;
     overflow: hidden;
     display: flex;
@@ -74,7 +74,8 @@
     position: relative;
     width: 100%;
     height: 7rem;
-    border-radius: 1rem;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 /* arrondie de l'image */
@@ -84,15 +85,15 @@
 
 /* arrondie du fond du texte */
 .tweet__galerie__title{
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /* mise en place et forme du bouton par rapport à l'image */
 .tweet__galerie__bouton{  
     position: absolute;
-    right: -5px;
-    top: -10px;
+    right: -1vw;
+    top: -1vh;
     padding: 10px;
     border-radius: 0 0 10px 0;
     background-color: var(--color-fond-blanc);
@@ -111,7 +112,7 @@
 
 /* mise en forme du titre */
 .tweet__autre__title{
-    margin-top: -0.1rem;
+    margin-top: 0;
     padding: 0.5rem;
     color: var(--color-texte-noir);
     font-family: var(--font-machine);
@@ -121,6 +122,6 @@
 /* mise en place du bouton du tweet */
 .tweet__autre__bouton{
     position: absolute;
-    right: 2%;
-    top: 5%;   
+    right: 2vw;
+    top: 1vh;   
 }

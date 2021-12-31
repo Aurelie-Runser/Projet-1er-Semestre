@@ -29,7 +29,7 @@ body{
 
 /* paragraphes  */
 p{
-    margin: 20px;
+    margin: 5vw;
 }
 
 /* titre */
@@ -43,8 +43,8 @@ h1{
 h2,
 h3{
     font-family: var(--font-machine);
-    margin: 30px;
-    margin-bottom: 20px;
+    margin: 7vw;
+    margin-bottom: 3vh;
 }
 
 /* taille inter-titre */
@@ -91,19 +91,19 @@ a{
 blockquote,
 .citation_fonce{
     display: block;
-    margin: 20px;
-    padding: 5px 10px 5px 20px;
-    border-left: 5px dashed var(--color-citation-claire);
+    margin: 3vh;
+    padding: 1vh 5vw 1vh 5vw;
+    border-left: 2vw dashed var(--color-citation-claire);
 
     font-style: italic;
-    font-weight: 1000;
+    font-weight: bold;
     color: var(--color-citation-claire);
     font-size: var(--size-article-citation);
 }
 
 /* couleur noir pour les citaion sur un fond blanc */
 .citation_fonce{
-    border-left: 5px dashed var(--color-citation-fonce);
+    border-left: 2vw dashed var(--color-citation-fonce);
     color: var(--color-citation-fonce);
 }
 
@@ -118,29 +118,29 @@ blockquote,
 
 /* textes décoratif */
 .deco{
+    margin-right: 15vw;
     font-family: var(--font-manuscrit);
     font-size: var(--size-element-graphique);
     color: var(--color-elements-graphique);
-    margin: 0 6% 0 5%;
 }
 
 /* marge superieur pour les textes décoratives des pages articles et galeries */
 .deco_article{
     display: inline-block;
-    margin: 70px 0 30px 20px;
+    margin: 5vh 0 5vh 5vw;
 }
 
 /* ligne décoratif */
 .ligne_pointie{
     border: none;
-    border-bottom: dashed var(--color-elements-graphique);
-    margin-top: 5%;
-    margin-bottom: 20px;
+    border-bottom: 1vh dashed var(--color-elements-graphique);
+    margin-top: 3vh;
+    margin-bottom: 4vh;
 }
 
 /* espace suplémentaire entre des éléments de différentes sections sur la page d'accueil */
 .espace{
-    margin: 8%;
+    margin: 5vh;
 }
 
 /* supression des décorations des listes */
@@ -154,6 +154,6 @@ blockquote,
 /* mise en forme de la video */
 .video{
     border: solid var(--color-fond-blanc);
-    border-radius: 1rem;
-    margin-top: 1rem;
+    border-radius: 10px;
+    margin-top: 2vh;
 }
