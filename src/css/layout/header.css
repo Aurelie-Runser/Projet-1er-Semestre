@@ -1,16 +1,10 @@
-/* mise en place de l'header */
-.header{
-    position: absolute;
-    width: 100%;
-}
-
 /* LA PETITE BANNIERE */
 
 /* mise en place et forme de la banniere */
 .header__banniere{
-    display: flex;
-    z-index: 3;
     position: fixed;
+    z-index: 3;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
@@ -51,61 +45,43 @@
 
 /* LA GRANDE BANIERRE */
 
+.header__image{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.header__img{
+    display: block;
+}
+
+/* mise en forme du fond de la banniere sans image */
+.header__titre{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 20vh;
+    padding-bottom: 2vh;
+    background-color: var(--color-fond-noir);
+}
+
 /* mise en forme du texte "femmes fortes" */
 .femmes_fortes{
+    position: absolute;
+    width: 100%;
+    align-self: flex-start;
     color: var(--color-titre-violet);
     font-size: var(--size-titre-femmes-fortes);
-    background-color: rgba(0,0,0,0.50);
 }
 
 /* mise en forme du titre de la page */
 .titre{
+    position: absolute;
+    width: 100%;
+    align-self: flex-end;
     font-size: var(--size-titre-page);
-    background-color: rgba(0,0,0,0.50);
-}
-
-
-/* mise en forme du fond de la banniere sans image */
-.header__titre{
-    width: 100%;
-    height: 160px;
-    background-color: var(--color-fond-noir);
-    padding-bottom: 10px;
-}
-
-/* Image de fond de chaque baniiere */
-
-/* mise en forme de la banniere avec image */
-.header__img{
-    display: grid;
-    width: 100%;
-    height: 160px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.header__revolution{
-    background-image: url("../../../public/img/header/header_article_resistance.webp");
-}
-
-.header__interview{
-    background-image: url("../../../public/img/header/header_article_interview.webp");
-}
-
-.header__livre{
-    background-image: url("../../../public/img/header/header_article_livre.webp");
-}
-
-.header__science{
-    background-image: url("../../../public/img/header/header_galerie_science.webp");
-}
-
-.header__activistes{
-    background-image: url("../../../public/img/header/header_galerie_activistes.webp");
-}
-
-.header__politique{
-    background-image: url("../../../public/img/header/header_galerie_politique.webp");
 }
 
 /* element non visible, sert à ce que le menu descende sous la banniere */

@@ -13,6 +13,24 @@ figcaption{
     text-align: right;
 }
 
+/* mise en place du filtre sur les images des tweets */
+.tweet__filtre{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* mise en place du filtre sur les images des header */
+.header__filtre{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgba(0,0,0,0.6);
+}
+
 /* images sur la page "a propos" */
 
 .img__avatar{
