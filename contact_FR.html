@@ -187,21 +187,13 @@
                                 open_yes = true"/>
 
                 </div>
+                
+                <div class="alignement_btn_envoye">
 
-                <div class="boutons__aligne--droite" x-data="{open_popup : false}">
-
-                    <span class="popup_envoye"
-                            id='popup'
-                            x-show=open_popup
-                            x-ref="popup">
-                        Votre message a bien été envoyé
-                    </span>
-
-                    <input class="bouton__envoyer" 
-                            type="submit" 
-                            value="Envoyer" 
-                            x-ref="bouton_envoyer" 
-                            x-on:click="open_popup = true">
+                    <input type="submit" id="btn_envoye">
+                    <div class="popup">
+                        <label for="btn_envoye">Votre message a bien été envoyé</label>
+                    </div>
 
                 </div>
 

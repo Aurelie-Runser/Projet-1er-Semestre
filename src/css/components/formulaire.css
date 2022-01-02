@@ -8,6 +8,14 @@
     text-transform: uppercase;
 }
 
+/* suppression de la mise en forme basique de la liste */
+select,
+option{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /* mise en forme des champs de saisis */
 select,
 option,
@@ -21,14 +29,6 @@ option,
     background: var(--color-b-input);
     font-family: var(--font-texte);
     color: var(--color-texte-blanc);
-}
-
-/* suppression de la mise en forme basique de la liste */
-select,
-option{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 
 /* mise en place de la fleche dans la liste */
@@ -57,8 +57,32 @@ option{
     color: var(--color-elements-graphique);
 }
 
-/* mise en place et forme du popup de confirmation d'envoie du message */
-.popup_envoye{
+
+/* BOUTON ENVOYE */
+
+/* alignement du bouton à droite */
+.alignement_btn_envoye{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 6vw;
+}
+
+/* mise en forme du bouton */
+input[type="submit"]{
+    display: block;
+    width: max-content;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: var(--color-fond-blanc);
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-bouton);
+    cursor: pointer;
+}
+
+/* Mise en place et forme du popup + transition */
+.popup{
     position: fixed;
     z-index: 1;
     width: auto;
@@ -70,4 +94,11 @@ option{
     background-color: var(--color-fond-noir);
     text-align: center;
     color: var(--color-bouton_envoye);
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    transition: .3s;
+}
+
+/* transition du popup */
+input:focus ~ .popup{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

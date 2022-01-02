@@ -37,12 +37,12 @@ button,
 /* texte du bouton + placement alignement du contenu */
 .tweet__bouton,
 .bouton__contenu{
-    font-family: var(--font-manuscrit);
-    font-size: var(--size-bouton);
     display: flex;
     align-items: center;
     padding: 10px;
     border-radius: 100px;
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-bouton);
 }
 
 /* mise en forme de l'image et du texte du bouton */
