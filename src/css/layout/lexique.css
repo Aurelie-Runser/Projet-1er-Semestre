@@ -17,6 +17,7 @@
     display: block;
     margin: 5vw;
     margin-top: 0;
+    word-wrap: break-word;  
 }
 
 .lexique__ancre{

@@ -21,7 +21,7 @@ body{
     text-decoration: none;
 }
 
-/* le scroll est suppremier (utiliser lorsque le menu est ouvert) */
+/* le scroll est supprimer (utiliser lorsque le menu est ouvert) */
 .noscroll,
 .noscroll body {
   overflow: hidden;
@@ -30,6 +30,7 @@ body{
 /* paragraphes  */
 p{
     margin: 5vw;
+    word-wrap: break-word;  
 }
 
 /* titre */
