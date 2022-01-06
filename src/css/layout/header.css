@@ -79,6 +79,8 @@
 /* mise en forme du titre de la page */
 .titre{
     position: absolute;
+    display: block;
+    padding: 0 10%;
     width: 100%;
     align-self: flex-end;
     font-size: var(--size-titre-page);
