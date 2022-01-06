@@ -13,6 +13,15 @@ figcaption{
     text-align: right;
 }
 
+/* mise en forme de la video */
+.video{
+    display: block;
+    border: solid var(--color-fond-blanc);
+    border-radius: 10px;
+    margin: auto auto;
+    margin-top: 5vh;
+}
+
 /* mise en place du filtre sur les images des tweets */
 .tweet__filtre{
     position: absolute;

@@ -152,9 +152,3 @@ blockquote,
     color: var(--color-texte-blanc);
 }
 
-/* mise en forme de la video */
-.video{
-    border: solid var(--color-fond-blanc);
-    border-radius: 10px;
-    margin-top: 2vh;
-}
