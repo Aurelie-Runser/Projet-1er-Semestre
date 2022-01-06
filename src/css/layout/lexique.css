@@ -20,9 +20,10 @@
     word-wrap: break-word;  
 }
 
-.lexique__ancre{
+.lexique__ancre,
+.ancre{
     display: block;
     height: 50px;
     margin-top: -50px;
     visibility: hidden;
-  }
+}
