@@ -1,4 +1,5 @@
-img{
+img,
+video{
     max-width: 100%;
     height: auto;
 }
@@ -14,8 +15,9 @@ figcaption{
 }
 
 /* mise en forme de la video */
-.video{
+video{
     display: block;
+    width: 90%;
     border: solid var(--color-fond-blanc);
     border-radius: 10px;
     margin: auto auto;
