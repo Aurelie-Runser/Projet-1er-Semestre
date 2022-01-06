@@ -1,0 +1,30 @@
+/* centre le texte (utiliser seulement sur la page "autres projets") */
+.texte__centre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: var(--size-article-sous-titre);
+}
+
+/* textes décoratif */
+.deco{
+    margin-right: 15vw;
+    font-family: var(--font-manuscrit);
+    font-size: var(--size-element-graphique);
+    color: var(--color-elements-graphique);
+}
+
+/* marge superieur pour les textes décoratives des pages articles et galeries */
+.deco_article{
+    display: inline-block;
+    margin: 5vh 0 5vh 5vw;
+}
+
+/* ligne décoratif */
+.ligne_pointie{
+    border: none;
+    border-bottom: 1vh dashed var(--color-elements-graphique);
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+}

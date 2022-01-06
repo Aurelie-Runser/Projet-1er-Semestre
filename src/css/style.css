@@ -6,6 +6,8 @@
 /* Base */
 @import url("base/main.css");
 @import url("base/media.css");
+@import url("base/liens.css");
+@import url("base/deco.css");
 
 /* Compenents */
 @import url("components/menu.css");
