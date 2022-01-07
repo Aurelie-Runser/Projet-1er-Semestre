@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
     <head>
         <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galeire : Science & Technologie</title>
+        <title>Gallery: Science & Technology</title>
     </head>
 
     <body>
@@ -15,8 +15,8 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="galerie_science_FR.html"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="index_EN.html"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="galerie_science_FR.html"><img src="public/icones/DrapeauFr.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -32,8 +32,8 @@
             <div class="header__image">
                 <p class="header__filtre"> </p>
                 <img class="header__img" src="public/img/header/header_galerie_science.webp" alt="">
-                <h1 class="femmes_fortes">Femmes Fortes</h1>
-                <h1 class="titre">Science & Technologie</h1>
+                <h1 class="femmes_fortes">Strong Women</h1>
+                <h1 class="titre">Science & Technology</h1>
             </div>
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
@@ -158,20 +158,23 @@
 
                 <div class="portrait__header">
                     <p class="portrait__header__texte">
-                            Années : <span class="portrait__texte__gras">1815-1852</span> (36 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Britannique</span>
-                        <br>Métier : <span class="portrait__texte__gras">Mathématicienne</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère programmeuse au monde</span>
+                            Years: <span class="portrait__texte__gras">1815-1852</span> (36 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">British</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Mathematician</span>
+                        <br>Best known for: <span class="portrait__texte__gras">being the world's first woman programmer</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/science/Ada_Lovelace.webp" alt="Peinture d'Ada Lovelace">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Ada Lovelace était naturellement doué avec nombres et les codes. Sa mère l’encouragea à étudier cette science et trouva des tuteurs pour l’instruire.</p>
-                    <p>Durant ses études, elle rencontra plusieurs intellectuels, dont 
-                        <a class="lien fonce" href="lexique_FR.html#c">Charles Babbage</a>. Cet homme rédigea des plans d’une calculatrice mécanique, puis d’
-                        <a class="lien fonce" href="lexique_FR.html#m">une machine analytique</a>, sensé résoudre des calcules plus complexe. Ada fut fascinées par ces prototypes d’ordinateurs.
+                    <p class="portrait__body__texte">Ada Lovelace was talended naturally with numbers and codes. Hes mother encouraged her to study this science and found teachers to teach them her.</p>
+                    <p>During her studies, she met many academics, notably
+                        <a class="lien fonce" href="lexique_EN.html#c">Charles Babbage</a>. This man wrote mechanical calculator’s plans, then
+                        <a class="lien fonce" href="lexique_EN.html#a">analytical machinery</a>’s plans, which solve more complex calculations. Ada was fascinated about this computer prototypes.
                     </p>
+                    <p>When she transleted Babbage’s works in english, she added his personal notes with an algorithm. Ada Lovelace was differente from other scientists, because she was convinced we could do more thing mit analytical machinery than just calculations.</p>
+                    <p>Thanks she, science was advance in the field of information technology, at the point today a Lovelace medal exists, to give poeple who do advance computer systems.</p>
+                    <p>His name, Ada, is too a programming language to honor her.</p>
                 </div>
             </div>
 
@@ -181,24 +184,24 @@
 
                 <div class="portrait__header">
                     <p class="portrait__header__texte">
-                            Années : <span class="portrait__texte__gras">1821-1910</span> (89 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Anglaise</span>
-                        <br>Métier : <span class="portrait__texte__gras">Médecin</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme diplômée en médecine aux Etats-Unis en 1879</span>
+                            Years: <span class="portrait__texte__gras">1821-1910</span> (89 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">British</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Doctor</span>
+                        <br>Best known for: <span class="portrait__texte__gras">be the 1st woman to receive a medical diploma in the United States in 1879</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/science/Elizabeth_Blackwell.webp" alt="Photo d'Elizabeth Blackwell">
                 </div>
 
                 <div>
                     <p class="portrait__body__texte">
-                        Malgré qu’au 19ème siècle, être une fille et recevoir de l’éducation était déjà un miracle, Elizabeth Blackwell décida de devenir médecin. Elle postula dans de nombreuse école et 
-                        <a class="lien claire" href="lexique_FR.html#h">le Hobart and William Smith College de Geneva</a>, près de New York, l’accepta en pensant qu’il s’agissait d’un canular. Ses études furent difficiles mais elle réussit à obtenir son diplôme en 1879. Ensuite, elle dut batailler pour trouver un emploi. Elle exerça à Londres et Paris.
+                        During the 19th century, be a girl and be educated was a miracle. But Elizabeth Blackwell was decided to become doctor. She send applications to many school and the
+                        <a class="lien claire" href="lexique_EN.html#h">Hobart and William Smith College in Geneva</a>, in Geneva, at New York, agreed but they think it was a jok. Studies’ Elizabeth were very difficult but she she successfully graduated in 1879. After, she work in London and Paris.
                     </p>
-                    <p>En 1857, elle fonde avec l’aide de sa sœur et d’un docteur 
-                        <a class="lien claire" href="lexique_FR.html#d">un dispensaire</a> pour les familles pauvres de New York nommé le New York Infirmary for Women and Children. Des années plus tard, l’établissement commença à offrir aux femmes voulant exercer la médecine des formation théorique et pratique.
+                    <p>In 1857, she created, with her sister and a doctor,
+                        <a class="lien claire" href="lexique_EN.html#c">a clinic</a> for New York poor families called New York Infirmary for Women and Children. Years later, the establishment offered formations for woman who want do medicine.
                     </p>
-                    <p>Malgré ses problèmes de santé, Elizabeth Blackwell milita jusqu’à la fin de sa vie pour les droits des femmes et pour offrir à celles qui le souhaitaient un accès à des soins prodigués par un personnel médical féminin.</p>
-                    <p>Elizabeth Blackwell a montré que femme et homme étaient égaux dans l’exercice de la médecine, chose qui aujourd’hui est devenue une évidence.</p>
+                    <p>Despite her health problems, Elizabeth Blackwell milita same at the end of her life for women's rights and to give who wanted it access to care by women medical staff.</p>
+                    <p>Elizabeth Blackwell showed woman and man were equal in medicine. This observation is became normal nowadays.</p>
                 </div>
             </div>
 
@@ -208,48 +211,49 @@
 
                 <div class="portrait__header">
                     <p class="portrait__header__texte">
-                            Années : <span class="portrait__texte__gras">1821-1912</span> (91ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
-                        <br>Métier : <span class="portrait__texte__gras">Enseignante, Infirmière & Humanitaire</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">avoir créer la Croix Rouge américaine en 1881</span>
+                            Years: <span class="portrait__texte__gras">1821-1912</span> (91 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">American</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Teacher, Nurse & Humanitarian</span>
+                        <br>Best known for: <span class="portrait__texte__gras">creat the American Red Cross in 1881</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/science/Clara_Barton.webp" alt="Photo de Clara Barton">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Clara Barton était une enseignante qui, lorsque 
-                        <a class="lien fonce" href="lexique_FR.html#g">la guerre de Sécession</a> avait commencé, avait décider d’apporter son aide aux soldats, d’abord en leur apportant des vivre durant l’année 1861, puis à partie de 1862 devint une infirmière. Elle fut surnommée « l’ange du champ de bataille ».
+                    <p class="portrait__body__texte">Clara Barton was a teacher. When
+                        <a class="lien fonce" href="lexique_EN.html#c">the Civil War</a> beginin, she decided to
+                        give her help to soliders. In firt, she provided foods in 1861. In 1962, she became nurs. Her nickname was “the angel of the battlefield”.
                     </p>
-                    <p>En 1870, elle participa au Comité international de secours aux militaire blessés (ancien nom du comité international de la Croix-Rouge) lors de 
-                        <a class="lien fonce" href="lexique_FR.html#g">la guerre franco-allemande</a>.
+                    <p>In 1870, she participated in the International Committee for the Relief of Wounded Soldiers (formerly the International Committee of the Red Cross) during
+                        <a class="lien fonce" href="lexique_EN.html#f">the Franco-German War</a>.
                     </p>
-                    <p>En 1881, Clara Barton crée 
-                        <a class="lien fonce" href="lexique_FR.html#c">la Croix Rouge</a> en Amérique et en fut la 1ère présidente.
+                    <p>In 1881, Clara Barton creat
+                        <a class="lien fonce" href="lexique_EN.html#r">the Red Cross</a> in United States and was ths 1st president.
                     </p>
                 </div>
             </div>
 
             <span class="ancre" id="amelia"></span>
             <div class="portrait__fonce">
-                <h2 class="portrait__titre">Amélia Earhart</h2>
+                <h2 class="portrait__titre">Amelia Earhart</h2>
 
                 <div class="portrait__header">
                     <p class="portrait__header__texte">
-                            Années : <span class="portrait__texte__gras">1897-1937</span> (40 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
-                        <br>Métier : <span class="portrait__texte__gras">Aviatrice</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">Avoir réalisé de nombreux record dans le domaine de l’aviation</span>
+                            Years: <span class="portrait__texte__gras">1897-1937</span> (40 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">American</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Aviator</span>
+                        <br>Best known for: <span class="portrait__texte__gras">having achieved many records in the field of aviation</span>
                     </p>
-                    <img class="portrait__img" src="public/img/galerie/science/Amelia_Earhart.webp" alt="Photo d'Amélia Earhart">
+                    <img class="portrait__img" src="public/img/galerie/science/Amelia_Earhart.webp" alt="Photo d'Amelia Earhart">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Amélia Earhart eu une enfance inhabituelle pour l’époque car elle fut élevée comme un garçon. Elle pensait que les filles valaient tout autant que les hommes, donc qu’elles pouvaient aussi accomplir de grandes choses. Elle inspira de nombreuse femme à se lancer dans l’aventure malgré leurs peurs pour réaliser leurs rêves.</p>
-                    <p>À la suite d’un baptême de l’aire en 1920, elle tombe amoureuse de l’aviation.</p>
-                    <p>Elle fut la 1ère femme à traverser l’Atlantique en Avion en 1928, bien que durant son premier vol, elle ne fit que de la figuration, n’ayant pas encore assez de connaissance. </p>
-                    <p>En 1932, elle réalisa son rêve et devint la 1ère femme et 2ème personne à accomplir un vol transatlantique en solo. Elle fut félicitée et reçu une médaille pour cette action.</p>
-                    <p>Elle réalisa d’autre record, féminin et mixte, avant 1937, où elle décida d’effectuer un tour du monde en avion, chose qui n’était encore jamais arrivé. Malheureusement, le 29 juin 1937, les garde cotes perdirent la trace d’Amélia Earhart et de son copilote lors de leur traverser du Pacifique. L’épave et les corps n’ont jamais été retrouver.</p>
-                    <blockquote>Les femmes doivent s’essayer aux mêmes choses que les hommes. Si elles échouent, cet échec doit servir de défi aux autres.</blockquote>
+                    <p class="portrait__body__texte">Amelia Earhart had a strange childhood for the time, because she was educated like a boy. She believed that womens were just as good as men, so they could also achieve great things. She inspired a lot of women to realize their dreams.</p>
+                    <p>After a first flight in 1920, she fell in love with aviation.</p>
+                    <p>She was the 1st woman who travel the Atlantic in plane in 1928, same during this flight, she was an extra.</p>
+                    <p>In 1932, she released her dream and became the 1st woman and the 2nd person who do a transatlantic flight alone. She received a medal for this.</p>
+                    <p>She released other records, for woman or two sexe. In 1937, she decided to do the round-the-world flight. No one had done it before. Unfortunately, 29 June 1937, the coastguards lost Amelia Earhart and her aircraft co-pilot in Pacific Ocean. The plane and bodies were never found.</p>
+                    <blockquote>Women, like men, should try to do the impossible. And when they fail, their failure should be a challenge to others.</blockquote>
                 </div>
             </div>
 
@@ -259,39 +263,39 @@
 
                 <div class="portrait__header">
                     <p class="portrait__header_texte">
-                            Années : <span class="portrait__texte__gras">1951-2012</span> (61 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Américaine</span>
-                        <br>Métier : <span class="portrait__texte__gras">Astronaute & Astrophysicienne</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme américaine à aller dans l’espace</span>
+                            Years: <span class="portrait__texte__gras">1951-2012</span> (61 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">American</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Astronaut & Astrophysicist</span>
+                        <br>Best known for: <span class="portrait__texte__gras">be the 1st American woman who in the space</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/science/Sally_Ride.webp" alt="Photo de Sally Ride">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Sally Ride fut sélectionnée en 1978 par la Nasa qui prévoit de former des astronautes parmi près d’un millier de candidats. Après des années d’entrainement intensif, elle fut choisie pour participer à la mission spatiale de la navette Challenger en juin 1983. Elle est donc la 1ère femme américaine à aller dans l’espace et occupa même une place importante dans l’équipage. En octobre de la même année, elle retourne dans l’espace en tant que spécialiste de mission.</p>
-                    <p>Elle finit par quitter la Nasa et fonda en 2001 sa société, Sally Ride Science, qui a pour but de donner envie aux enfants d’apprendre les sciences et les rendant divertissant et intéressant.</p>
-                    <blockquote class="citation_fonce">J’ignore pourquoi, mais je n’ai jamais cédé au stéréotype qui voulait que les sciences ne soient pas pour les filles. Mes parents m’y ont encouragée. A la différence de beaucoup de mes amies, je n’ai jamais écouté les professeurs ou les conseillers d’éducation.</blockquote>
+                    <p class="portrait__body__texte">Sally Ride was selected in 1978 by NASA, which form astronaut then they were one thousand applicants. After many years of intensive training, she was chosen to do the space shuttle Challenger mission in June 1983. So, she is the 1st American woman who goes into space and has an important place in the team. In October 1983, she returns in space as a mission specialist.</p>
+                    <p>She leaves NASA in 2001 and create a company, Sally Ride Science. This society aims to inspire children to learn science and make it fun and interesting.</p>
+                    <blockquote class="citation_fonce">I don't know why, but I never gave in to the stereotype that science was not for girls. My parents encouraged me to do it. Unlike many of my friends, I never listened to teachers or school counsellors.</blockquote>
                 </div>
             </div>
 
             <section>
-                <h2 class="deco deco_article">Autres pages Galerie</h2>
+                <h2 class="deco deco_article">Other Gallery’s pages</h2>
 
                 <div class="boutons__aligne--droite">
 
                     <div class="bouton boutons_pages">
-                        <a href="galerie_activiste_FR.html">
+                        <a href="galerie_activiste_EN.html">
                             <span class="bouton__contenu">
-                                Activistes & Révolutionnaires
+                                Activists & Revolutionaries
                                 <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
 
                     <div class="bouton boutons_pages">
-                        <a href="galerie_politique_FR.html">
+                        <a href="galerie_politique_EN.html">
                             <span class="bouton__contenu">
-                                Femmes de Pouvoir & Politique
+                                Women in Power & Politics
                                 <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
     <head>
         <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
-        <title>Frise chronologique</title>
+        <title>Timeline</title>
     </head>
 
     <body>
@@ -15,8 +15,8 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="frise_FR.html"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="index_EN.html"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="frise_FR.html"><img src="public/icones/DrapeauFr.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -30,8 +30,8 @@
 
             <div class="cache"></div>
             <div class="header__titre">
-                <h1 class="femmes_fortes">Femmes Fortes</h1>
-                <h1 class="titre">Frise chronologique</h1>
+                <h1 class="femmes_fortes">Strong Women</h1>
+                <h1 class="titre">Timeline</h1>
             </div>
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
@@ -144,94 +144,92 @@
                     <div class="frise__texte">
 
                         <p>
-                            <span class="texte__date">1713 :</span> 
+                            <span class="texte__date">1713:</span> 
                             <a class="claire externe" href="https://fr.wikipedia.org/wiki/Anne-Marguerite_Petit_du_Noyer" target="_blank">
-                                Anne-Marguerite Petit du Noyer</a>, Française, Première journaliste connue
+                                Anne-Marguerite Petit du Noyer</a>, French, First known journalist
                         </p>
                     </div>
 
-                    <p><span class="texte__date">1737 :</span> 
+                    <p><span class="texte__date">1737:</span> 
                         <a class="claire externe" href="https://www.futura-sciences.com/sciences/personnalites/physique-emilie-chatelet-873/" target="_blank">
-                            Émilie du Châtelet</a>, Française, Première femme à obtenir une publication scientifique
+                            Emilie du Chatelet</a>, French, First woman to obtain a scientific publication
                     </p>
 
-                    <p><span class="texte__date">1740 :</span> 
+                    <p><span class="texte__date">1740:</span> 
                         <a class="claire externe" href="https://histoireparlesfemmes.com/2020/04/08/laura-bassi-mathematicienne-physicienne/" target="_blank">
-                            Laura Bassi</a>, Italienne, Première femme à obtenir un diplôme de professeur universitaire en science
+                            Laura Bassi</a>, Italian, first woman to obtain a university teaching diploma inscience
                     </p>
 
-                    <p><span class="texte__date">1843 :</span> 
-                        <a class="lien claire" href="galerie_science_FR.html#ada"> 
-                            Ada Lovelace, Anglaise</a>, Première personne à avoir écrit un programme informatique
+                    <p><span class="texte__date">1843:</span> 
+                        <a class="lien claire" href="galerie_science_EN.html#ada"> 
+                            Ada Lovelace</a>,  English, First person to write a computer program
                     </p>
                     
-                    <p><span class="texte__date">1849-53 :</span> 
+                    <p><span class="texte__date">1849-53:</span> 
                         <a class="lien claire" href="galerie_science_FR.html#elizabeth">
-                            Elizabeth Blackwell</a>, Américaine, Première médecin
+                            Elizabeth Blackwell</a>, American, First lady doctor
                     </p>
                     
-                    <p><span class="texte__date">1880 :</span> France, les filles sont autorisées à aller au collège et au lycée</p>
+                    <p><span class="texte__date">1880:</span> France, girls accepted to go to college and high school</p>
                     
-                    <p><span class="texte__date">1893 :</span> Nouvelle-Zélande donne le droit de vote aux femmes, Premier paye à l’accorder</p>
+                    <p><span class="texte__date">1893:</span> New Zealand gives women’s right to vote, First pays which do this</p>
 
-                    <p><span class="texte__date">1896 :</span> 
+                    <p><span class="texte__date">1896:</span> 
                         <a class="claire externe" href="https://fr.wikipedia.org/wiki/Alice_Guy" target="_blank">
-                            Zelia Nuttal</a>, Américaine, Première réalisatrice de cinéma
+                            Zelia Nuttal</a>, American, First woman film director
                     </p>
 
-                    <p><span class="texte__date">1901 :</span> 
+                    <p><span class="texte__date">1901:</span> 
                         <a class="claire externe" href="https://fr.wikipedia.org/wiki/Jeanne_Chauvin" target="_blank">
-                            Jeanne Chauvin</a>, France, Première avocate
+                            Jeanne Chauvin</a>, France, First Lawyer
                     </p>
 
-                    <p><span class="texte__date">1907 :</span> Finlande, Première élection législative au monde où des femmes sont élus France, loi autorisant les femmes mariées à disposer librement de leur salaire</p>
+                    <p><span class="texte__date">1907:</span> Finlande, First legislative election in the world where women are elected</p>
 
-                    <p><span class="texte__date">1918 :</span> Arménie + Hongrie + Canada + Royaume-Uni + Pologne + Géorgie + Azerbaïdjan + Autriche + Allemagne + Estonie + Lettonie + Lituanie donnent le droit de vote aux femmes</p>
+                    <p><span class="texte__date">1918:</span> Armenia + Hungary + Canada + United Kingdom + Poland + Georgia + Azerbaijan + Austria + Germany + Estonia + Latvia + Lithuania give women the right to vote</p>
 
-                    <p><span class="texte__date">1922 :</span> 
-                        <a class="lien claire" href="galerie_science_FR.html#amelia">
-                            Amélia Earhart</a>, Américaine, Première femme à traverser l’atlantique
+                    <p><span class="texte__date">1922:</span> 
+                        <a class="lien claire" href="galerie_science_EN.html#amelia">
+                            Amelia Earhart</a>, American, First woman to cross the Atlantic
                     </p>
                     
-                    <p><span class="texte__date">1936 :</span> France, 1ères femmes du gouvernement : Cécile Brunschvicg, Suzanne Lacore et Irène Joliot-Curie</p>
+                    <p><span class="texte__date">1936:</span> France, 1st women in government : Cécile Brunschvicg, Suzanne Lacore, Irène Joliot-Curie</p>
 
-                    <p><span class="texte__date">1944 :</span> France donne le droit de vote aux femmes</p>
+                    <p><span class="texte__date">1944:</span>  France give women's right to vote</p>
 
-                    <p><span class="texte__date">1946 :</span> France, suppression de la loi sur le 
-                        <a class="lien claire" href="lexique_FR.html#s">
-                            Salaire Féminin
+                    <p><span class="texte__date">1946:</span> France, abolition of the law on
+                        <a class="lien claire" href="lexique_EN.html#s">
+                            women's pay
                         </a>
                     </p>
 
                     <p><span class="texte__date">1953 :</span> 
-                        <a class="claire externe" href="https://fr.wikipedia.org/wiki/Vijaya_Lakshmi_Pandit" target="_blank">
-                            Vijaya Lakshmi Pandit</a>, Indienne, Première ministre, ambassadrice, femme à présider l’assemblée générale de l’ONU
+                        <a class="claire externe" href="https://fr.wikipedia.org/wiki/Vijaya_Lakshmi_Pandit" target="_blank">Vijaya Lakshmi Pandit</a>, Indian, First minister, ambassador, woman president of the UN General Assembly
                     </p>
 
-                    <p><span class="texte__date">1960 :</span> 
-                        <a class="lien claire" href="galerie_science_FR.html#sirimavo">
-                            Sirimavo Bandaranaike</a>, Sri Lankaise, Première 1ère ministre d’un pays
+                    <p><span class="texte__date">1960:</span> 
+                        <a class="lien claire" href="galerie_science_EN.html#sirimavo">
+                            Sirimavo Bandaranaike</a>, Sri Lankan, First Prime Minister of a country
                     </p>
 
-                    <p><span class="texte__date">1963 :</span> 
+                    <p><span class="texte__date">1963:</span> 
                         <a class="claire externe" href="https://histoireparlesfemmes.com/2012/12/07/valentina-terechkova-la-premiere-femme-dans-lespace/" target="_blank">
-                            Valentina Terechkova
-                        </a>, Russie, Première femme dans l’espace
+                            Valentina Terechkova</a>, Russia, First woman in space
                     </p>
 
-                    <p><span class="texte__date">1965 :</span> France, loi autorisant les femmes à exercer une activité professionnelle sans l’autorisation du mari. Loi autorisant les femmes à ouvrir un compte en banque à leur nom</p>
+                    <p><span class="texte__date">1965:</span> France, Law authorising women to exercise a professional activity without the authorisation of the husband. Law allowing women to open a bank account in their name</p>
 
-                    <p><span class="texte__date">1974 :</span> 
+                    <p><span class="texte__date">1974:</span> 
                         <a class="claire externe" href="https://fr.wikipedia.org/wiki/Isabel_Mart%C3%ADnez_de_Per%C3%B3n" target="_blank">
-                            Isabel Martínez de Perón</a>, Argentine, Première présidente d’un pays
+                            Isabel Martinez de Peron</a>, Argentina, First President of a country
                     </p>
 
-                    <p><span class="texte__date">1980 :</span> 
+                    <p><span class="texte__date">1980:</span> 
                         <a class="claire externe" href="https://fr.wikipedia.org/wiki/Vigd%C3%ADs_Finnbogad%C3%B3ttir" target="_blank">
-                            Vigdís Finnbogadóttir</a>, Islandaise, Première présidente de la république élue par suffrage universel
+                            Vigdis Finnbogadottir</a>, Icelandic, First president of the republic elected by universal suffrage
                     </p>
 
-                    <p><span class="texte__date">2011 :</span> Arabie saoudite donne le droit de vote aux femmes. Dernier pays à l’accorder à ce jour</p>
+                    <p><span class="texte__date">2011:</span> Saudi Arabia gives women's right to vote, the last country to do this</p>
                 </div>
             </div>
 

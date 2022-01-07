@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
 
     <head>
         <meta charset="UTF-8">
@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="src/css/style.css">
         <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Galeire : Activistes & Révolutionnaires</title>
+        <title>Gallery: Activists & Revolutionaries</title>
     </head>
 
     <body>
@@ -15,8 +15,8 @@
             <nav class="header__banniere">
 
                 <div class="header__start">
-                    <a class="header__logo" href="./"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
-                    <a class="header__langue" href="galerie_activiste_FR.html"><img src="public/icones/DrapeauEn.svg" alt="Bouton changer en anglais"></a>
+                    <a class="header__logo" href="index_EN.html"><img src="public/icones/Logo.svg" alt="Logo de Femmes Fortes"></a>
+                    <a class="header__langue" href="galerie_activiste_FR.html"><img src="public/icones/DrapeauFr.svg" alt="Bouton changer en anglais"></a>
                 </div>
 
                 <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -32,8 +32,8 @@
             <div class="header__image">
                 <p class="header__filtre"> </p>
                 <img class="header__img" src="public/img/header/header_galerie_activistes.webp" alt="">
-                <h1 class="femmes_fortes">Femmes Fortes</h1>
-                <h1 class="titre">Activistes & Révolutionnaires</h1>
+                <h1 class="femmes_fortes">Strong Women</h1>
+                <h1 class="titre">Activists & Revolutionaries</h1>
             </div>
 
             <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
@@ -150,24 +150,23 @@
 
                 <div class="portrait__header">
                     <p class="portrait__header__texte">
-                            Années : <span class="portrait__texte__gras">1820/1822 -1913 </span> (93/91 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">méricaine</span>
-                        <br>Métier : <span class="portrait__texte__gras">ilitante Abolitionniste</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">ilitante en faveur de l’abolition de l’esclavage des afro-américains</span>
+                            Years: <span class="portrait__texte__gras">1820/1822-1913 </span> (93/91 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">American</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Abolitionist activist</span>
+                        <br>Best known for: <span class="portrait__texte__gras">activist for the abolition of African-American slavery</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/activiste/Harriet_Tubman.webp" alt="Photo d'Harriet Tubman">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Née esclave de parents esclave, Harriet Tubman était convaincue que les afro-américains, ou les noirs en général, n’étaient pas inferieurs aux blancs.</p>
-                    <p>En 1849, elle réussit à s’enfuir et atteint la Pennsylvanie, état où l’esclavage était aboli. Elle était donc libre. Cependant, non satisfaite, elle décida de rejoindre 
-                        <a class="lien fonce" href="lexique_FR.html#r">le réseau de l’Underground Railroad</a> et pris la tête d’expédition de libération d’esclave en 1851. Elle effectua au total 18 expéditions où elle réussit à sauver sa fam
+                    <p class="portrait__body__texte">Born slaver, Harriet Tubman was convinced African-American, or black, weren’t lower white.</p>
+                    <p>In 1849, she successfully escaped and arrived in Pennsylvania, a state where slavery had been abolished. So, she was free. However, she wasn’t satisfied. She decided to join
+                        <a class="lien fonce" href="lexique_EN.html#u">the Underground Railroad network</a> and she led a slave liberation expedition in 1851. Shed did 18 shipments when she succeeds in saving her family.
+                    <p>After 
+                        <a class="lien fonce" href="lexique_EN.html#c">the Civil War</a>, she became a spy for the party in favour of the abolition of slavery. So she was the 1st woman who advises an assault group. Thanks to his valuable information, the assault group was able to free 700 slaves.
                     </p>
-                    <p>Après 
-                        <a class="lien fonce" href="lexique_FR.html#g">la guerre de Sécession</a>, elle devient une espionne pour le parti favorable à l’abolition de l’esclavage. Elle fut donc la 1ère femme à conseiller un groupe d’assaut. Grâce à ses précieux renseignement, le groupe d’assaut pue libérer 700 esclaves.
-                    </p>
-                    <p>Plus tard, Harriet Tubman milita contre le sexisme et le racisme.</p>
-                    <p>Elle était surnommée la « Moïse Noir » de pars ses combats menés et sa détermination, inspirant de nombreux afro-américain et de nombreuses femmes.</p>
+                    <p>Later, Harriet Tubman fought sexism and racism.</p>
+                    <p>Hariiet Tubman was nicknamed “Moses”. Her struggles and her determination inspired many African-American and many women.</p>
                 </div>
             </div>
 
@@ -176,25 +175,25 @@
                 <h2 class="portrait__titre">Emmeline Pankhurst</h2>
 
                 <div class="portrait__header">
-                    <p>Années : <span class="portrait__texte__gras">1858-1928</span> (69 ans)
-                        <br>Nationalité : <span class="portrait__texte__gras">Britannique</span>
-                        <br>Métier : <span class="portrait__texte__gras">Politique</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">avoir créer le mouvement des suffragettes et participé à établir le droit de vote des femmes au Royaume-Unis</span>
+                    <p class="portrait__header__texte">
+                            Years: <span class="portrait__texte__gras">1858-1928</span> (69 Years)
+                        <br>Nationality: <span class="portrait__texte__gras">British</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Politician</span>
+                        <br>Best known for: <span class="portrait__texte__gras">creating the suffragette movement and helping to establish women's right to vote in the United Kingdom</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/activiste/Emmeline_Pankhurst.webp" alt="Photo d'Emmeline Pankhurst">
                 </div>
                 
                 <div>
-                    <p class="portrait__body__texte">Emmeline Pankhurst créa en 1903 
-                        <a class="lien claire" href="lexique_FR.html#w">la Women’s Social and Political Union</a>, une organisation pour revendiquer le droit de vote des femmes au Royaume-Unis. Les militantes de cette organisation se font appeler 
-                        <a class="lien claire" href="lexique_FR.html#s">les suffragettes.</a>
+                    <p class="portrait__body__texte">Emmeline Pankurst created in 1903 the 
+                        <a class="lien claire" href="lexique_EN.html#w">la Women’s Social and Political Union</a>, an organisation claiming the right to vote for women in the United Kingdom. The activists call 
+                        <a class="lien claire" href="lexique_EN.html#s">suffragettes.</a>
                     </p>
-                    <p>Emmeline Pankhurst organisait des discours, manifestation, rassemblement et même un journal (Votes for Women) et des parlements réservés aux femmes.</p>
-                    <p>Afin de médiatiser encore plus leurs mouvements, elle décida d’effectuer des sabotages lors des manifestations. Les suffragettes détruisaient des bien et écrivaient sur les murs leurs slogan : « Droit de vote pour les femmes ». Bien que le mouvement des femmes était initialement non violant, certaines avaient fait bruler et exploser de bâtiments, peuplé ou non.</p>
-                    <p>Emmeline Pankhurst fut arrêtée une première fois en février 1908 alors qu’elle essayait de remettre une protestation au Premier Ministre H. H. Asquith au Parlement. Durant son procès le 21 octobre 1908, elle déclare :</p>
-                    <blockquote>Nous sommes ici non pas parce que nous avons violé la loi, nous sommes ici de par notre volonté de faire la loi.</blockquote>
-                    <p>Durant la 1ère Guerre Mondiale, elle fit pressions sur le gouvernement afin de permettre aux femmes de remplacer les hommes partis aux fronts dans le milieu du travail.</p>
-                    <p>Le droit de vote des femmes fut accordé en 1918, mais seulement pour les plus de 30 ans. A la mort d’Emmeline Pankhurst, le droit de vote a été accorder aux femmes de plus de 21 ans, comme les hommes.</p>
+                    <p>Emmeline Pankhurst organised speeches, demonstrations, rallies and a newspaper (Votes for Women) and parliaments with only women.</p>
+                    <p>Emmeline Pankhurst was first arrested in February 1908 when she tried to deliver a protest to Prime Minister H. H. Asquith in Parliament. During her trial on 21 October 1908, shedeclared:</p>
+                    <blockquote>We are here not because we have broken the law, we are here because we want to make the law.</blockquote>
+                    <p>During the World War 1, she pressed the government to women can replace men in the workplace.</p>
+                    <p>Women were accorded the right to vote in 1918, but only for those over 30 years of age. After Emmeline Pankhurst's death, the right to vote, was given to women over 21, like men.</p>
                 </div>
             </div>
 
@@ -203,22 +202,23 @@
                 <h2 class="portrait__titre">Massoumeh Ebtekar</h2>
 
                 <div class="portrait__header">
-                    <p>Années : <span class="portrait__texte__gras">1960-</span>
-                        <br>Nationalité : <span class="portrait__texte__gras">Iranienne</span>
-                        <br>Métier : <span class="portrait__texte__gras">Activiste, Scientifique et Politicienne</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">être la 1ère femme vice-présidente de la République d’Iran</span>
+                    <p class="portrait__header__texte">
+                            Years: <span class="portrait__texte__gras">1960-</span>
+                        <br>Nationality: <span class="portrait__texte__gras">Iranian</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Activist, Scientist & Politician</span>
+                        <br>Best known for: <span class="portrait__texte__gras">be the first woman vice-president of the Republic of Iran</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/activiste/Massoumeh_Ebtekar.webp" alt="Photo de Massoumeh Ebtekar">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Massoumeh Ebtekar devint la 1ère femme vice-présidente de la République d’Iran en 1997. Elle a la charge de l’environnement et entreprend nombre de réformes importantes.</p>
-                    <p>Féministe, elle dirige un réseau d’ONG féminines à Téhéran, la capitale de l’Iran, et ose critiquer les comportements de certains hommes en Afganisant.</p>
-                    <p>En 2017, lors de son nouveau mandat de vice-présidente, elle reçoit la charge des affaires féminines et de la famille.</p>
-                    <p>En 2006, Massoumeh Ebtekar reçoit 
-                        <a class="lien fonce" href="lexique_FR.html#c">le prix Champion de la Terre</a>, pour son engagement à effectuer des changements environnementaux en tant que membre du gouvernement iranien.
+                    <p class="portrait__body__texte">Massoumeh Ebtekar became the 1st woman vice-president of the Republic of Iran in 1997. She is responsible for the environment and undertakes many important reforms.</p>
+                    <p>A feminist, she leads a network of women's NGOs in Tehran, the capital of Iran, and dares to criticise the conduct of some men in Afganising.</p>
+                    <p>In 2017, in her new mandate of vice-president, she was put in charge of women's and family affairs.</p>
+                    <p>In 2006, Massoumeh Ebtekar received the
+                        <a class="lien fonce" href="lexique_EN.html#c">Champion of the Earth award</a>, for his commitment to environmental change as a member of the Iranian government.
                     </p>
-                    <p>Elle a de nombreux projets ambitieux, défend ses positions, qu’elles soient politiques, environnemental ou religieuse, et ne cesse de vouloir faire progresser les domaines dans lesquelles elle intervient.</p>
+                    <p>She has many ambitious projects, defends her positions, whether political, environmental or religious, and never stops trying to advance the domains in which she intervenes.</p>
                 </div>
             </div>
 
@@ -227,41 +227,42 @@
                 <h2 class="portrait__titre">Malala Yousafzai</h2>
 
                 <div class="portrait__header">
-                    <p>Années : <span class="portrait__texte__gras">1997-</span>
-                        <br>Nationalité : <span class="portrait__texte__gras">Pakistanaise</span>
-                        <br>Métier : <span class="portrait__texte__gras">Bloggeuse, Activiste</span>
-                        <br>Principalement connue pour : <span class="portrait__texte__gras">Prix Nobel de la Paix en 2014</span>
+                    <p class="portrait__header__texte">
+                            Years: <span class="portrait__texte__gras">1997-</span>
+                        <br>Nationality: <span class="portrait__texte__gras">Pakistani</span>
+                        <br>Occupation: <span class="portrait__texte__gras">Blogger & Activist</span>
+                        <br>Best known for: <span class="portrait__texte__gras">received Nobel Peace Prize in 2014</span>
                     </p>
                     <img class="portrait__img" src="public/img/galerie/activiste/Malala_Yousafzai.webp" alt="Photo de Malala Yousafzai">
                 </div>
 
                 <div>
-                    <p class="portrait__body__texte">Malala Yousafzai est née dans une famille pakistanaise 
-                        <a class="lien claire" href="lexique_FR.html#r">réformiste</a> et a donc eu la chance de pouvoir aller à l’école. Son opposition aux talibans et son engagement pour les droits des femmes étaient très visibles sur son blog.</p>
-                    <p>En 2012, elle fut la cible d’une tentative d’assassinat et reçu une balle dans la tête. Le monde était en état de choc. Elle reçu des soins et pue continuer de vivre.</p>
-                    <p>Elle devint une figure politique. Elle prononça des discours aux Royaume-Unis et rencontra beaucoup de chef d’Etat dans le but d’améliorer les droits des femmes et le droit à l’éducation à l’échelle international.</p>
-                    <p>Malgré son jeune âge, Malala Yousafzai se bat pour ses convictions. Son courage face aux hommes qui tentent de la tuer, sa détermination, son engagement pour l’amélioration des conditions de vie des femmes impressionnent et inspirent de nombreuses filles de tous âges, et même le monde entier.</p>
+                    <p class="portrait__body__texte">Malala Yousafzai was born in a
+                        <a class="lien claire" href="lexique_EN.html#r">reformist</a> Pakistani family and she could go to school. She doesn't agree with taliban's and she is engaged in women's rights. This is very evident on his blog. In 2012, she was the target of an assassination attack and was shot in the head. The world was in shock. She received treatment and was able to continue living.</p>
+                    <p>In 2012, she was the target of an assassination attack and was shot in the head. The world was in shock. She received treatment and was able to continue living.</p>
+                    <p>She became a political figure. She made presentations in the United Kingdom and met many heads of state. She does this to advance women's rights and the right to education at the international level.</p>
+                    <p>Despite her young age, Malala Yousafzai is fighting for her beliefs. Her courage in the face of men who try to kill her, her determination and her commitment to improving the lives of women impress and inspire girls of all ages, and same the world.</p>
                 </div>
             </div>
 
             <section>
-                <h2 class="deco deco_article">Autres pages Galerie</h2>
+                <h2 class="deco deco_article">Other Gallery’s pages</h2>
 
                 <div class="boutons__aligne--droite">
 
                     <div class="bouton boutons_pages">
-                        <a href="galerie_politique_FR.html">
+                        <a href="galerie_politique_EN.html">
                             <span class="bouton__contenu">
-                                Femmes de Pouvoir & Politique
+                                Women in Power & Politics
                                 <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
                     </div>
 
                     <div class="bouton boutons_pages">
-                        <a href="galerie_science_FR.html">
+                        <a href="galerie_science_EN.html">
                             <span class="bouton__contenu">
-                                Science & Technologie
+                                Science & Technology
                                 <img class="tweet__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
                             </span>
                         </a>
