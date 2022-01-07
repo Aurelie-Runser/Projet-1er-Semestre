@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <title>Error 404</title>
+</head>
+<body>
+
+    <main class="error__body">
+        <h1 class="error__titre">Error 404 <br>Page not found</h1>
+
+        <img class="error__img" src="public/img/error__img.webp" alt="image d'erreur 404">
+
+        <div class="bouton">
+            <a href="#" onclick="history.go(-1)">
+                <span class="bouton__contenu error__bouton">
+                    Back
+                    <img class="error__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
+                </span>
+            </a>
+        </div>
+        <div class="bouton">
+            <a href="./">
+                <span class="bouton__contenu error__bouton">
+                    Home
+                    <img class="error__bouton__img" src="public/icones/Fleche.svg" alt="fleche">
+                </span>
+            </a>
+        </div>
+    </main>
+    
+</body>
+</html>

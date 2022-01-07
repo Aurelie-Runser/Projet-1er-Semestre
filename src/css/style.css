@@ -22,6 +22,7 @@
 @import url("layout/article.css");
 @import url("layout/frise.css");
 @import url("layout/lexique.css");
+@import url("layout/error.css");
 
 /* Utils */
 @import url("utils/variables.css");
