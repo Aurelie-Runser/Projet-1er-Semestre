@@ -37,6 +37,7 @@ p{
 h1{
     font-family: var(--font-manuscrit);
     font-size: var(--size-titre-page);
+    font-weight: normal;
     text-align: center;
 }
 
