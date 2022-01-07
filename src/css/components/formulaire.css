@@ -86,16 +86,21 @@ input[type="submit"]{
     position: fixed;
     z-index: 1;
     width: auto;
-    top: 50%;
-    left: 10vw;
+    top: 45%;
+    left: 0;
+    margin: 0 12%;
     padding: 15px 20px;
     border: 2px solid var(--color-bouton_envoye);
-    border-radius: 100px;
+    border-radius: 10px;
     background-color: var(--color-fond-noir);
     text-align: center;
     color: var(--color-bouton_envoye);
     clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
     transition: .3s;
+}
+
+.popupEN{
+    margin: 0 30%;
 }
 
 /* transition du popup */
