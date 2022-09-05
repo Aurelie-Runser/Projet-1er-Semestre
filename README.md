@@ -10,7 +10,7 @@ Ce projet avait comme thème imposé le féministe.
 
 Nous avions disposé de 4 mois pour réaliser ce projet de A à Z, du dossier de communication, au maquettage jusqu'au développement du site, soit 1 mois pour cette dernière partie.
 
-Comme il s'agit du "1er site" que l'on fait, il devait être optimisé pour téléphone (Iphone X en modèle) et non responsive, nous n'avions pas le droit d'utiliser de librairie Css et devions-nous appuyer sur la structure fournie par nos professeurs et trouvable à cette adresse : https://github.com/MMI-Montbeliard/projetS1.git.
+Comme il s'agit du "1er site" que l'on fait, il devait être optimisé pour téléphone (iPhone X en modèle) et non responsive, nous n'avions pas le droit d'utiliser de librairie Css et devions-nous appuyer sur la structure fournie par nos professeurs et trouvable à cette adresse : https://github.com/MMI-Montbeliard/projetS1.git.
 
 En plus de ces contraintes, voici les éléments devant être présent dans notre site ; 
   - un en-tête
@@ -32,3 +32,5 @@ En plus de ces contraintes, voici les éléments devant être présent dans notr
   - un formulaire de contact
   - une partie "à propos"
   - la liste des liens vers les autres projets du groupe de TP
+  
+Voici le lien vers le site : https://femmesfortes.aurelierunser.fr/ (Comme le site est conçu pour téléphone, il est préférable de le voir dans ce format, donc iPhone X ou 375x812)
